@@ -9,18 +9,71 @@
             .large{
                 font-size: 50px;
             }
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+
+            th, td {
+              border: 1px solid #ddd; /* 设置单元格边框样式 */
+              padding: 8px; /* 设置单元格内边距 */
+              text-align: left; /* 设置文本左对齐 */
+            }
+
+            th {
+              background-color: #f2f2f2; /* 设置表头背景颜色 */
+            }
+
+            tr:nth-child(even) {
+              background-color: #f9f9f9; /* 设置偶数行背景颜色 */
+            }
         </style>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--适配手机大小-->
+        
         <title>
-            JOURNEY TO the UK
+            Adventure in the UK
         </title>
     </head>
     <!--This is the way to annotate.-->
 
 
     <body style="background-color: lightgray;">
-        <header class="centered">Welcome to our legendary tutorial</header>
+        <header class="centered">Trip to the UK</header>
+
+
+<!--从这开始写表格-->
+        <table border="1" class = "row">
+            <tr>
+                <th>英文</th>
+                <th>中文</th>
+                <!-- Add more column headers as needed -->
+            </tr>
+
+            <script>
+                // Sample data (replace this with your actual data)
+                var data = [
+                    ["Hi", "中文1列"],
+                    ["Day 2", "this is the new edit"],
+                    // Add more rows of data as needed
+                ];
+
+                // Loop through the data to generate table rows
+                for (var i = 0; i < data.length; i++) {
+                    document.write("<tr>");
+
+                    for (var j = 0; j < data[i].length; j++) {
+                        document.write("<td>" + data[i][j] + "</td>");
+                    }
+
+                    document.write("</tr>");
+                }
+            </script>
+        </table>
+<!--在这结束表格-->
+
+        
         <header class="large">
             和British People打交道
         </header>
@@ -28,11 +81,6 @@
         <p>Excuse me, could you recommend a good place to eat around here? 打扰一下，你能推荐一个附近吃饭的好地方吗？</p>
         <p>Excuse me, we are new in town, could you tell us what's the go-to food that we absolutly have to try around here? 打扰一下，我们是新来的，可以告诉我们附近有什么是必须尝尝的美食吗？</p>
 
-        <header class="large">
-            问路
-        </header>
-        <p>Excuse me, could you please tell me where I can catch a bus around here? 对不起，你能告诉我在这附近哪里可以坐公共汽车吗？</p>
-        <p></p>Hey, do you know where I can catch a taxi nearby? 嘿，你知道我在附近哪里可以打车吗？</p>
 
     </body>
 </html>
