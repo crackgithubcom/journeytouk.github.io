@@ -13,43 +13,61 @@
               border-collapse: collapse;
               width: 100%;
             }
-
+        
             th, td {
               border: 1px solid #ddd;
               padding: 8px;
-              position: relative;
+              text-align: center;
             }
         
-            th::before,
-            td::before,
-            th::after,
-            td::after {
-              content: "";
+            th {
+              background-color: #f2f2f2;
+            }
+        
+            /* Style for the corners */
+            th:first-child::before,
+            th:last-child::after,
+            td:first-child::before,
+            td:last-child::after {
+              content: '+';
               position: absolute;
-              border: 1px solid #ddd;
+              color: #ddd;
+              font-size: 20px;
             }
         
+            /* Style for horizontal lines */
             th::before,
-            td::before {
-              top: -1px;
-              left: -1px;
-              width: calc(100% + 2px);
-              height: 1px;
-            }
-        
             th::after,
+            td::before,
             td::after {
-              bottom: -1px;
-              left: -1px;
-              width: calc(100% + 2px);
-              height: 1px;
+              content: '-----';
+              position: absolute;
+              color: #ddd;
             }
         
             th::before,
             th::after {
               top: -1px;
+              width: calc(100% + 2px);
+            }
+        
+            td::before,
+            td::after {
+              top: 100%;
+              width: calc(100% + 2px);
+            }
+        
+            /* Style for vertical lines */
+            th::before,
+            td::before {
+              left: -1px;
               height: calc(100% + 2px);
-              width: 1px;
+            }
+        
+            th::after,
+            td::after {
+              right: -1px;
+              height: calc(100% + 2px);
             }
         </style>
         
