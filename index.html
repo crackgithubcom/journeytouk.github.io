@@ -12,26 +12,36 @@
     <!--This is the way to annotate.-->
 
 
+
+    
     <body style="background-color: lightgray;">
         <header class="centered">Travel English Guide</header>
-        <p>   </p><p>   </p><p>   </p>
+        <br><br><br>
+
+        <p>问问题、搭讪的时候一定记得先说：</p>
+        <ul>
+            <li>Excuse me.</li>
+            <li>Sorry to bother you.</li>
+            <li>Pardon the interruption.</li>
+        </ul>
 
 
         
-
+        <h2>在机场：</h2>
 <!--从这开始写表格-->
         <table border="1" class = "row">
             <tr>
                 <th>英文</th>
-                <th>中文</th>
+                <th>解释</th>
                 <!-- Add more column headers as needed -->
             </tr>
 
             <script>
                 // Sample data (replace this with your actual data)
                 var data = [
-                    ["Hi", "中文1列"],
-                    ["Day 2", "this is the new edit"],
+                    ["Excuse me, where is the baggage claim area?", "打扰一下，行李认领处在哪？"],
+                    ["I just got off the plane.","我刚下飞机。"],
+                    ["Where can I find the tourist information desk?", "我在哪里可以找到旅游咨询台？"]
                     // Add more rows of data as needed
                 ];
 
@@ -49,27 +59,71 @@
         </table>
 <!--在这结束表格-->
 
+
         
-        <h2>在机场：</h2>
-        <ul>
-            <li>Getting off the plane: "Excuse me, where is the baggage claim area?"</li>
-            <li>在移民处： "Could you please show me the way to immigration?"</li>
-            <li>询问信息： "Where can I find the tourist information desk?"</li>
-        </ul>
-        
-        <h2>打车或使用交通工具：</h2>
-        <ul>
-            <li>打车： "Can you take me to [目的地], please?"</li>
-            <li>地铁/公交： "Which platform does the [线路] train/bus leave from?"</li>
-            <li>问司机： "Could you drop me off at [目的地], please?"</li>
-        </ul>
-        
-        <h2>购物：</h2>
-        <ul>
-            <li>在商店： "Excuse me, how much is this [商品]?"</li>
-            <li>试衣服： "May I try this on, please?"</li>
-            <li>讨价还价： "Is the price negotiable?"</li>
-        </ul>
+        <h2>打车与交通：</h2>
+<!--从这开始写表格-->
+        <table border="1" class = "row">
+            <tr>
+                <th>英文</th>
+                <th>解释</th>
+                <!-- Add more column headers as needed -->
+            </tr>
+
+            <script>
+                // Sample data (replace this with your actual data)
+                var data = [
+                    ["Can you take me to [目的地], please?", "请问你能带我去吗[目的地]"],
+                    ["Could you drop me off at [目的地], please?","请问你能让我在下车吗[目的地]"]
+                    // Add more rows of data as needed
+                ];
+
+                // Loop through the data to generate table rows
+                for (var i = 0; i < data.length; i++) {
+                    document.write("<tr>");
+
+                    for (var j = 0; j < data[i].length; j++) {
+                        document.write("<td>" + data[i][j] + "</td>");
+                    }
+
+                    document.write("</tr>");
+                }
+            </script>
+        </table>
+<!--在这结束表格-->
+
+
+<h2>购物：</h2>
+<!--从这开始写表格-->
+        <table border="1" class = "row">
+            <tr>
+                <th>英文</th>
+                <th>解释</th>
+                <!-- Add more column headers as needed -->
+            </tr>
+
+            <script>
+                // Sample data (replace this with your actual data)
+                var data = [
+                    ["Excuse me, how much is this [商品]?, please?", "请问这个多少钱？"],
+                    ["May I try this on, please?","我可以试穿一下吗？"]
+                    // Add more rows of data as needed
+                ];
+
+                // Loop through the data to generate table rows
+                for (var i = 0; i < data.length; i++) {
+                    document.write("<tr>");
+
+                    for (var j = 0; j < data[i].length; j++) {
+                        document.write("<td>" + data[i][j] + "</td>");
+                    }
+
+                    document.write("</tr>");
+                }
+            </script>
+        </table>
+<!--在这结束表格-->
+
         
         <h2>用餐：</h2>
         <ul>
