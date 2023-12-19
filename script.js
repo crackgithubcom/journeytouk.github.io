@@ -16,8 +16,7 @@ readableElements.forEach(element => {
     });
 });
 
-var testElement = document.querySelector('.readable');
-testElement.click();  // 确保这会触发朗读
+
 
 // Function to generate a table based on the provided data
 function generateTable(title, data) {
@@ -44,6 +43,9 @@ function generateTable(title, data) {
 
     document.write("</table>");
 }
+
+var testElement = document.querySelector('.readable');
+testElement.click();  // 确保这会触发朗读
 
 // Sample data for different sections
 var airportData = [
