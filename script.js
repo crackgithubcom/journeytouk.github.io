@@ -18,11 +18,27 @@ function generateTable(title, data) {
 }
 
 
-// 函数：朗读文本
-function readText(cell) {
+// Function to read text from cell
+function readTextFromCell(cell) {
     const utterance = new SpeechSynthesisUtterance(cell.innerText);
     speechSynthesis.speak(utterance);
 }
+
+// Function to read general text
+function readText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+}
+
+// Get all elements with the "readable" class
+const readableElements = document.querySelectorAll('.readable');
+
+// Add click event listener to each readable element
+readableElements.forEach(element => {
+    element.addEventListener('click', () => {
+        readTextFromCell(element);
+    });
+});
 
 // Sample data for different sections
 var airportData = [
