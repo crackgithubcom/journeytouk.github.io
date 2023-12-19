@@ -12,7 +12,7 @@ const readableElements = document.querySelectorAll('.readable');
 // Add click event listener to each readable element
 readableElements.forEach(element => {
     element.addEventListener('click', () => {
-        readTextFromCell(element);
+        readText(element.innerText);
     });
 });
 
@@ -38,7 +38,6 @@ function generateTable(title, data) {
 
     document.write("</table>");
 }
-
 
 // Sample data for different sections
 var airportData = [
@@ -112,3 +111,4 @@ generateTable("问路", askdirData);
             <li>"I've lost my [物品]. Can you help me find it?"</li>
         </ul>
 */
+
