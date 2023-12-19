@@ -1,5 +1,21 @@
 // script.js
 
+// Function to read general text
+function readText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+}
+
+// Get all elements with the "readable" class
+const readableElements = document.querySelectorAll('.readable');
+
+// Add click event listener to each readable element
+readableElements.forEach(element => {
+    element.addEventListener('click', () => {
+        readTextFromCell(element);
+    });
+});
+
 // Function to generate a table based on the provided data
 function generateTable(title, data) {
     document.write("<h2>" + title + "：</h2>");
@@ -22,24 +38,6 @@ function generateTable(title, data) {
 
     document.write("</table>");
 }
-
-
-// Function to read general text
-function readText(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    speechSynthesis.speak(utterance);
-}
-
-// Get all elements with the "readable" class
-const readableElements = document.querySelectorAll('.readable');
-
-// Add click event listener to each readable element
-readableElements.forEach(element => {
-    element.addEventListener('click', () => {
-        readTextFromCell(element);
-    });
-});
-
 
 
 // Sample data for different sections
