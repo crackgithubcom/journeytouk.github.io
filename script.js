@@ -26,12 +26,15 @@ function generateTable(title, data) {
         document.write("<tr>");
         for (var j = 0; j < data[i].length; j++) {
             var text = data[i][j];
+            
+            /*
             var isQuoted = text.startsWith('"') && text.endsWith('"');
 
             // 如果文本被引号包裹，添加 "readable" 类
             var cellClass = isQuoted ? 'readable' : '';
-
-            document.write("<td class='" + cellClass + "'>" + text + "</td>");
+            */
+            
+            document.write("<td class='readable'>" + text + "</td>");
         }
         document.write("</tr>");
     }
