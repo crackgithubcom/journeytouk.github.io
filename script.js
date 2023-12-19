@@ -69,7 +69,6 @@ generateTable("购物", shoppingData);
 generateTable("吃饭", mealData);
 generateTable("问路", askdirData);
 
-document.write("<p class='readable'>hi, this is a debug statement.</p>");
 
 /*
 
