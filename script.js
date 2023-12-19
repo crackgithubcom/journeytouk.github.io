@@ -1,24 +1,6 @@
 // script.js
 
-// Function to read general text
-function readText(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
-    speechSynthesis.speak(utterance);
-}
 
-// Get all elements with the "readable" class
-const readableElements = document.querySelectorAll('.readable');
-
-// Add click event listener to each readable element
-readableElements.forEach(element => {
-    element.addEventListener('click', () => {
-        readText(element.innerText);
-    });
-});
-
-
-
-// Function to generate a table based on the provided data
 function generateTable(title, data) {
     document.write("<h2>" + title + "：</h2>");
     document.write("<table border='1' class='row'>");
@@ -86,6 +68,25 @@ generateTable("打车与交通", taxiData);
 generateTable("购物", shoppingData);
 generateTable("吃饭", mealData);
 generateTable("问路", askdirData);
+
+
+
+// Function to read general text
+function readText(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+}
+
+// Get all elements with the "readable" class
+const readableElements = document.querySelectorAll('.readable');
+
+// Add click event listener to each readable element
+readableElements.forEach(element => {
+    element.addEventListener('click', () => {
+        readText(element.innerText);
+    });
+});
+
 
 /*
 
