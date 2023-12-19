@@ -18,12 +18,6 @@ function generateTable(title, data) {
 }
 
 
-// Function to read text from cell
-function readTextFromCell(cell) {
-    const utterance = new SpeechSynthesisUtterance(cell.innerText);
-    speechSynthesis.speak(utterance);
-}
-
 // Function to read general text
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -39,6 +33,24 @@ readableElements.forEach(element => {
         readTextFromCell(element);
     });
 });
+
+
+// Function to read text from cell
+function readTextFromCell(cell) {
+    const utterance = new SpeechSynthesisUtterance(cell.innerText);
+    speechSynthesis.speak(utterance);
+}
+
+// 获取所有包含 "readable" 类的表格单元格
+const readableTableCells = document.querySelectorAll('.readable td');
+
+// 为每个表格单元格添加点击事件监听器
+readableTableCells.forEach(cell => {
+    cell.addEventListener('click', () => {
+        readTextFromCell(cell);
+    });
+});
+
 
 // Sample data for different sections
 var airportData = [
