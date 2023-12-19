@@ -9,7 +9,13 @@ function generateTable(title, data) {
     for (var i = 0; i < data.length; i++) {
         document.write("<tr>");
         for (var j = 0; j < data[i].length; j++) {
-            document.write("<td>" + data[i][j] + "</td>");
+            var text = data[i][j];
+            var isQuoted = text.startsWith('"') && text.endsWith('"');
+
+            // 如果文本被引号包裹，添加 "readable" 类
+            var cellClass = isQuoted ? 'readable' : '';
+
+            document.write("<td class='" + cellClass + "'>" + text + "</td>");
         }
         document.write("</tr>");
     }
@@ -34,22 +40,6 @@ readableElements.forEach(element => {
     });
 });
 
-
-// Function to read text from cell
-function readTextFromCell(cell) {
-    const utterance = new SpeechSynthesisUtterance(cell.innerText);
-    speechSynthesis.speak(utterance);
-}
-
-// 获取所有包含 "readable" 类的表格单元格
-const readableTableCells = document.querySelectorAll('.readable td');
-
-// 为每个表格单元格添加点击事件监听器
-readableTableCells.forEach(cell => {
-    cell.addEventListener('click', () => {
-        readTextFromCell(cell);
-    });
-});
 
 
 // Sample data for different sections
