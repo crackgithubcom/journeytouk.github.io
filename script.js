@@ -58,7 +58,7 @@ var askdirData = [
 ];
 
 var OxfordapartmentData = [
-    ["How can I get to the Oxford street 2 bed apartment - Hyde Park by bus", "我怎么坐公交到牛津街海德公园的2床公寓"]
+    ["How can I get to the Oxford street 2 bed apartment - Hyde Park by bus?", "我怎么坐公交到牛津街海德公园的2床公寓？"]
 ];
 
 var xData = [
