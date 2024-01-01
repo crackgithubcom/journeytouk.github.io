@@ -57,6 +57,10 @@ var askdirData = [
     ["Excuse me, can you tell me how to get to [地点]?", "请问这里要怎么去呢"]
 ];
 
+var OxfordapartmentData = [
+    ["How can I get to the Oxford street 2 bed apartment - Hyde Park by bus", "我怎么坐公交到牛津街海德公园的2床公寓"]
+];
+
 var xData = [
     ["", ""],
     ["", ""]
@@ -64,6 +68,7 @@ var xData = [
 
 // Call the function with different data for each section
 generateTable("在机场", airportData);
+generateTable("去牛津街海德公园住处", OxfordapartmentData);
 generateTable("打车与交通", taxiData);
 generateTable("购物", shoppingData);
 generateTable("吃饭", mealData);
