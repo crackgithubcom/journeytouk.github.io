@@ -2,10 +2,10 @@ function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
 
     // 为了在 iPhone 上工作，可能需要设置语言为 'en-US' 或其他支持的语言
-    utterance.lang = 'en-US';
+    utterance.lang = 'en-AU';
 
     // 在 iPhone 上，尝试选择支持的语音（例如 Siri 的语音）
-    const iosVoice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-US');
+    const iosVoice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-AU');
     
     if (iosVoice) {
         utterance.voice = iosVoice;
@@ -39,9 +39,9 @@ speechSynthesis.onvoiceschanged = () => {
     });
 };
 
-*/
 
 
+/*
 
 // Function to read general text
 function readText(text) {
@@ -58,3 +58,4 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
+*/
