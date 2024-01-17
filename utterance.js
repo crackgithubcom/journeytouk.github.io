@@ -1,4 +1,4 @@
-/*
+
 // 判断当前设备是否可能存在发音问题  
 function isPotentiallyBrokenDevice() {  
     // 这里只是一个简单的示例，实际情况可能需要更复杂的检测逻辑  
@@ -37,8 +37,8 @@ readableElements.forEach(element => {
         readText(element.innerText);  
     });  
 });
-*/
 
+/*
 // Function to read general text
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -54,4 +54,4 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
-
+*/

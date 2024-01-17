@@ -18,6 +18,7 @@ function generateTable(title, data) {
     document.write("</table>");
 }
 
+
 var testElement = document.querySelector('.readable');
 testElement.click();  // 确保这会触发朗读
 
@@ -74,50 +75,51 @@ var checkInData = [
 
 
 var airportAnnouncements = [  
-    ["请通过安检门", "Please pass through the security gate."],  
-    ["请把你的包打开，我们要检查一下", "Please open your bag for inspection."],  
-    ["我只是要确认你有没有携带液体", "I just need to confirm if you are carrying any liquids."],  
-    ["行李再过一次X光机", "Your luggage needs to go through the X-ray machine again."],  
-    ["什么时候可以登机？", "When can I board the plane?"],  
-    ["你的航班可能误点了", "Your flight might be delayed."],  
-    ["各位旅客请注意，飞往伦敦的cz303航班已经开始登机，请头等舱的旅客前往登机门。", "Attention passengers, flight CZ303 to London has begun boarding. First class passengers, please proceed to the boarding gate."],  
-    ["请经济舱的旅客前往登机门。", "Economy class passengers, please proceed to the boarding gate."],  
-    ["各位旅客请注意，由于天气不佳，所有飞往伦敦的航班都将延后起飞，我们对此深表歉意，并感谢您的配合与耐心，我们将尽快通知您航班新的起飞时间，谢谢。", "Attention passengers, due to inclement weather, all flights to London will be delayed. We deeply apologize for the inconvenience and appreciate your cooperation and patience. We will notify you of the new departure time as soon as possible. Thank you."],  
-];  //已添加
+    ["Please pass through the security gate.", "请通过安检门"],  
+    ["Please open your bag for inspection.", "请把你的包打开，我们要检查一下"],  
+    ["I just need to confirm if you are carrying any liquids.", "我只是要确认你有没有携带液体"],  
+    ["Your luggage needs to go through the X-ray machine again.", "行李再过一次X光机"],  
+    ["When can I board the plane?", "什么时候可以登机？"],  
+    ["Your flight might be delayed.", "你的航班可能误点了"],  
+    ["Attention passengers, flight CZ303 to London has begun boarding. First class passengers, please proceed to the boarding gate.", "各位旅客请注意，飞往伦敦的cz303航班已经开始登机，请头等舱的旅客前往登机门。"],  
+    ["Economy class passengers, please proceed to the boarding gate.", "请经济舱的旅客前往登机门。"],  
+    ["Attention passengers, due to inclement weather, all flights to London will be delayed. We deeply apologize for the inconvenience and appreciate your cooperation and patience. We will notify you of the new departure time as soon as possible. Thank you.", "各位旅客请注意，由于天气不佳，所有飞往伦敦的航班都将延后起飞，我们对此深表歉意，并感谢您的配合与耐心，我们将尽快通知您航班新的起飞时间，谢谢。"]
+];//已添加
   
-var airportTerms = [  
-    ["登机柜台", "Check-in Counter"],  
-    ["查验护照", "Passport Check"],  
-    ["安全检查", "Security Check"],  
-    ["进入登机门", "Proceed to Boarding Gate"],  
-    ["登机", "Boarding"],  
-    ["经济舱", "Economy Class"],  
-    ["商务舱", "Business Class"],  
-    ["头等舱", "First Class"],  
-    ["机上电影", "In-flight Movie"],  
-    ["洗手间", "Restroom"],  
-    ["洗手间有人使用", "Restroom Occupied"],  
-    ["洗手间没人使用", "Restroom Vacant"],  
-    ["救生衣", "Life Jacket"],  
-    ["氧气罩", "Oxygen Mask"],  
-    ["气流", "Turbulence"],  
-    ["呕吐", "Vomiting"],  
-    ["晕机", "Airsickness"],  
-    ["耳鸣", "Tinnitus"],  
-    ["紧急出口", "Emergency Exit"],  
-    ["素食", "Vegetarian"],  
-    ["牛肉", "Beef"],  
-    ["猪肉", "Pork"],  
-    ["鱼肉", "Fish"],  
-    ["面包", "Bread"],  
-    ["时差", "Jet Lag"],  
-    ["国际日期变更线", "International Date Line"],  
-    ["高度", "Altitude"],  
-    ["地面温度", "Ground Temperature"],  
-    ["机长", "Captain"],  
-    ["全体机员", "All Crew Members"],  
-    ["驾驶舱", "Cockpit"],  
-];  //已添加
+var airportTerms = [
+    ["Check-in Counter", "登机柜台"],
+    ["Passport Check", "查验护照"],
+    ["Security Check", "安全检查"],
+    ["Proceed to Boarding Gate", "进入登机门"],
+    ["Boarding", "登机"],
+    ["Economy Class", "经济舱"],
+    ["Business Class", "商务舱"],
+    ["First Class", "头等舱"],
+    ["In-flight Movie", "机上电影"],
+    ["Restroom", "洗手间"],
+    ["Restroom Occupied", "洗手间有人使用"],
+    ["Restroom Vacant", "洗手间没人使用"],
+    ["Life Jacket", "救生衣"],
+    ["Oxygen Mask", "氧气罩"],
+    ["Turbulence", "气流"],
+    ["Vomiting", "呕吐"],
+    ["Airsickness", "晕机"],
+    ["Tinnitus", "耳鸣"],
+    ["Emergency Exit", "紧急出口"],
+    ["Vegetarian", "素食"],
+    ["Beef", "牛肉"],
+    ["Pork", "猪肉"],
+    ["Fish", "鱼肉"],
+    ["Bread", "面包"],
+    ["Jet Lag", "时差"],
+    ["International Date Line", "国际日期变更线"],
+    ["Altitude", "高度"],
+    ["Ground Temperature", "地面温度"],
+    ["Captain", "机长"],
+    ["All Crew Members", "全体机员"],
+    ["Cockpit", "驾驶舱"],
+];//已添加
+
 
 var Lunchtime = [  
     ["午餐有什么可以选？", "What are the lunch options?"],  
@@ -259,17 +261,17 @@ var TrainSchedule = [
 
 
 
-
 // Call the function with different data for each section
 generateTable("在机场", airportData);
-generateTable("机场过关",airportAnnouncement);
+generateTable("购物", shoppingData);
 generateTable("登机篇",checkInData);
+generateTable("机场过关",airportAnnouncements);
 generateTable("机场词汇",airportTerms);
+/*
 generateTable("机场第二篇",Airport);
 generateTable("去牛津街海德公园住处", OxfordapartmentData);
 generateTable("去酒店路上",Waytohotel);
 generateTable("打车",TaxiData);
-generateTable("购物", shoppingData);
 generateTable("吃饭", mealData);
 generateTable("午餐",Lunchtime);
 generateTable("餐馆对话",Restaurant);
@@ -278,6 +280,6 @@ generateTable("火车行程表",TrainSchedule);
 generateTable("火车站询问",TrainStation);
 
 
-
+*/
 
 
