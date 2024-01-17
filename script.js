@@ -10,14 +10,6 @@ function generateTable(title, data) {
         document.write("<tr>");
         for (var j = 0; j < data[i].length; j++) {
             var text = data[i][j];
-            
-            /*
-            var isQuoted = text.startsWith('"') && text.endsWith('"');
-
-            // 如果文本被引号包裹，添加 "readable" 类
-            var cellClass = isQuoted ? 'readable' : '';
-            */
-            
             document.write("<td class='readable'>" + text + "</td>");
         }
         document.write("</tr>");
@@ -29,13 +21,14 @@ function generateTable(title, data) {
 var testElement = document.querySelector('.readable');
 testElement.click();  // 确保这会触发朗读
 
+
+
 // Sample data for different sections
 var airportData = [
     ["Excuse me, where is the baggage claim area?", "打扰一下，行李认领处在哪？"],
     ["I just got off the plane.", "我刚下飞机。"],
     ["Where can I find the tourist information desk?", "我在哪里可以找到旅游咨询台？"]
 ];
-
 
 var shoppingData = [
     ["Excuse me, how much is this [商品]?, please?", "请问这个多少钱？"],
@@ -56,6 +49,7 @@ var askdirData = [
 var OxfordapartmentData = [
     ["How can I get to the Oxford street 2 bed apartment - Hyde Park by bus?", "我怎么坐公交到牛津街海德公园的2床公寓？"]
 ];
+
 
 var checkInData = [  
     ["Check-in", "办理登机手续"],  
@@ -262,20 +256,9 @@ var TrainSchedule = [
     ["按照列车时刻表是11:50到，中午会到。我可以看一下时刻表吗？", "According to the train schedule, it's scheduled to arrive at 11:50. It should be there by noon. Can I see the schedule?"],  
     ["对不起，我想请问一下去剑桥的火车时刻。", "Excuse me, I was wondering about the train schedule to Cambridge."]  
 ]; //已添加
-  
-// 示例：如何使用这些数据  
-function displayConversationPairs() {  
-    conversations.forEach(function(pair) {  
-        console.log("中文: " + pair[0] + " — 英文: " + pair[1]);  
-    });  
-}  
-  
-displayConversationPairs();
 
-var xData = [
-    ["", ""],
-    ["", ""]
-];
+
+
 
 // Call the function with different data for each section
 generateTable("在机场", airportData);
@@ -286,7 +269,6 @@ generateTable("机场第二篇",Airport);
 generateTable("去牛津街海德公园住处", OxfordapartmentData);
 generateTable("去酒店路上",Waytohotel);
 generateTable("打车",TaxiData);
-generateTable("打车与交通", taxiData);
 generateTable("购物", shoppingData);
 generateTable("吃饭", mealData);
 generateTable("午餐",Lunchtime);
@@ -294,6 +276,7 @@ generateTable("餐馆对话",Restaurant);
 generateTable("问路", askdirData);
 generateTable("火车行程表",TrainSchedule);
 generateTable("火车站询问",TrainStation);
+
 
 
 
