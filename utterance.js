@@ -1,3 +1,4 @@
+/*
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
 
@@ -39,10 +40,10 @@ speechSynthesis.onvoiceschanged = () => {
     });
 };
 
+*/
 
 
 
-/*
 // Function to read general text
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -58,5 +59,3 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
-
-*/
