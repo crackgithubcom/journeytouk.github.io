@@ -1,3 +1,4 @@
+/*
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';  // 设置语言为英语（美国）
@@ -13,9 +14,9 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
+*/
 
 
-/*
 // Function to read general text
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -31,4 +32,4 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
-*/
+
