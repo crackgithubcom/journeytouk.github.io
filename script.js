@@ -122,141 +122,140 @@ var airportTerms = [
 
 
 var Lunchtime = [  
-    ["午餐有什么可以选？", "What are the lunch options?"],  
-    ["有牛肉饭和鲜鱼面，你要哪一种？", "We have beef rice and fresh fish noodles. Which one would you like?"],  
-    ["我要鲜鱼面。", "I'll have the fresh fish noodles."],  
-    ["要不要喝点咖啡或茶呢？", "Would you like some coffee or tea?"],  
-    ["请给我咖啡。", "I'll have coffee, please."],  
-    ["请问需要什么吗？", "Is there anything you need?"],  
-    ["我觉得不太舒服，麻烦给我一个呕吐袋。", "I'm not feeling well. Could I have a sickness bag, please?"],  
-    ["需要喝点水吗？", "Would you like some water?"],  
-    ["我可以跟你换座位吗？", "Could I swap seats with you?"],  
-    ["不好意思，你坐我的位置了。", "Excuse me, you're in my seat."],  
-    ["可以帮我把行李放上去吗？", "Could you help me put my luggage up there?"],  
-    ["可以帮我把行李拿下来吗？", "Could you help me take my luggage down?"],  
-    ["上面的置物箱都满了，我的行李要放哪边？", "The overhead bins are full. Where should I put my luggage?"],  
-    ["您可以将行李放在前面的座位下面。", "You can put your luggage under the seat in front of you."],  
-    ["麻烦教我怎么系安全带好吗？", "Could you show me how to fasten the seat belt, please?"],  
-    ["请问安全带要怎么解开？", "How do I unfasten the seat belt?"],  
-    ["我要怎么把椅背放下来？", "How do I recline my seat?"],  
-    ["请竖直椅背好吗？", "Could you please put your seat back up?"],  
-    ["这副耳机是坏的，麻烦给我一副新的。", "These headphones are broken. Could I have a new pair, please?"],  
-    ["请问灯怎么开？", "How do I switch on the light?"],  
-    ["请再给我一条毯子好吗？", "Could I have another blanket, please?"],  
-    ["请再给我一个枕头。", "Could I have another pillow, please?"],  
-    ["机上电影什么时候开始播放？", "When does the in-flight movie start?"],  
-    ["什么时候可以使用电子产品？", "When can I use electronic devices?"]  
-];  //已添加
+    ["What are the lunch options?", "午餐有什么可以选？"],  
+    ["We have beef rice and fresh fish noodles. Which one would you like?", "有牛肉饭和鲜鱼面，你要哪一种？"],  
+    ["I'll have the fresh fish noodles.", "我要鲜鱼面。"],  
+    ["Would you like some coffee or tea?", "要不要喝点咖啡或茶呢？"],  
+    ["I'll have coffee, please.", "请给我咖啡。"],  
+    ["Is there anything you need?", "请问需要什么吗？"],  
+    ["I'm not feeling well. Could I have a sickness bag, please?", "我觉得不太舒服，麻烦给我一个呕吐袋。"],  
+    ["Would you like some water?", "需要喝点水吗？"],  
+    ["Could I swap seats with you?", "可以跟我换座位吗？"],  
+    ["Excuse me, you're in my seat.", "不好意思，你坐我的位置了。"],  
+    ["Could you help me put my luggage up there?", "可以帮我把行李放上去吗？"],  
+    ["Could you help me take my luggage down?", "可以帮我把行李拿下来吗？"],  
+    ["The overhead bins are full. Where should I put my luggage?", "上面的置物箱都满了，我的行李要放哪边？"],  
+    ["You can put your luggage under the seat in front of you.", "您可以将行李放在前面的座位下面。"],  
+    ["Could you show me how to fasten the seat belt, please?", "麻烦教我怎么系安全带好吗？"],  
+    ["How do I unfasten the seat belt?", "请问安全带要怎么解开？"],  
+    ["How do I recline my seat?", "我要怎么把椅背放下来？"],  
+    ["Could you please put your seat back up?", "请竖直椅背好吗？"],  
+    ["These headphones are broken. Could I have a new pair, please?", "这副耳机是坏的，麻烦给我一副新的。"],  
+    ["How do I switch on the light?", "请问灯怎么开？"],  
+    ["Could I have another blanket, please?", "请再给我一条毯子好吗？"],  
+    ["Could I have another pillow, please?", "请再给我一个枕头。"],  
+    ["When does the in-flight movie start?", "机上电影什么时候开始播放？"],  
+    ["When can I use electronic devices?", "什么时候可以使用电子产品？"]  
+];//已添加
 
-var Restaurant = [  
-    ["请问洗手间在哪里？", "Where is the restroom, please?"],  
-    ["我觉得不舒服。", "I'm not feeling well."],  
-    ["我想吐。", "I feel like vomiting."],  
-    ["你们有晕机药吗？", "Do you have any medication for airsickness?"],  
-    ["你们有头痛药吗？", "Do you have any medication for headaches?"],  
-    ["请问晚餐几点开始供应？", "What time does dinner start being served?"],  
-    ["请问你要吃牛肉还是猪肉？", "Would you like beef or pork?"],  
-    ["还要再来一点面包吗？", "Would you like some more bread?"],  
-    ["可以再给我一些面包吗？", "Can I have some more bread, please?"],  
-    ["想喝点什么饮料吗？", "Would you like a drink?"],  
-    ["我要橙汁。", "I'll have orange juice."],  
-    ["想喝点酒吗？", "Would you like an alcoholic drink?"],  
-    ["还要再来一点咖啡吗？", "Would you like some more coffee?"],  
-    ["可以给我一杯加柠檬片的汽水吗？", "Can I have a soda with a lemon slice, please?"],  
-    ["请问您吃完了吗？", "Have you finished eating?"],  
-    ["我吃完了。", "I've finished."], 
-    ["我可以刷信用卡付款吗？", "Can I use my credit card for payment?"],  
-    ["请问如何填写这份表格？", "How do I fill out this form?"],  
-    ["现在当地时间是几点？", "What is the current local time?"]  
+var Restaurant = [    
+    ["Where is the restroom, please?", "请问洗手间在哪里？"],    
+    ["I'm not feeling well.", "我觉得不舒服。"],    
+    ["I feel like vomiting.", "我想吐。"],    
+    ["Do you have any medication for airsickness?", "你们有晕机药吗？"],    
+    ["Do you have any medication for headaches?", "你们有头痛药吗？"],    
+    ["What time does dinner start being served?", "请问晚餐几点开始供应？"],    
+    ["Would you like beef or pork?", "请问你要吃牛肉还是猪肉？"],    
+    ["Would you like some more bread?", "还要再来一点面包吗？"],    
+    ["Can I have some more bread, please?", "可以再给我一些面包吗？"],    
+    ["Would you like a drink?", "想喝点什么饮料吗？"],    
+    ["I'll have orange juice.", "我要橙汁。"],    
+    ["Would you like an alcoholic drink?", "想喝点酒吗？"],    
+    ["Would you like some more coffee?", "还要再来一点咖啡吗？"],    
+    ["Can I have a soda with a lemon slice, please?", "可以给我一杯加柠檬片的汽水吗？"],    
+    ["Have you finished eating?", "请问您吃完了吗？"],    
+    ["I've finished.", "我吃完了。"],   
+    ["Can I use my credit card for payment?", "我可以刷信用卡付款吗？"],    
+    ["How do I fill out this form?", "请问如何填写这份表格？"],    
+    ["What is the current local time?", "现在当地时间是几点？"]    
 ]; //已添加
 
-var Airport = [  
-    ["过境停留时间", "Transit time"],  
-    ["入镜卡", "Entry card"],  
-    ["关税申报表", "Customs declaration form"],  
-    ["海关", "Customs"],  
-    ["通关", "Customs clearance"],  
-    ["居民", "Resident"],  
-    ["非居民", "Non-resident"],  
-    ["外国人", "Foreigner"],  
-    ["行李检查", "Luggage inspection"],  
-    ["行李遗失招领处", "Luggage lost and found"],  
-    ["关税", "Tariff"],  
-    ["免税的", "Duty-free"],  
-    ["免税额", "Duty-free allowance"],  
-    ["付税", "Paying taxes"],  
-    ["私人物品", "Personal belongings"],  
-    ["自己要用的", "For personal use"],  
-    ["违禁品", "Prohibited items"],  
-    ["入镜柜台", "Entry desk"],  
-    ["请出示您的护照和入镜登记表", "Please show me your passport and entry registration form"],  
-    ["给您。您来的目的是什么？我是来观光的。你打算在这里呆几天？七天，好的，谢谢。", "Here you go. What's the purpose of your visit? I'm here for sightseeing. How many days do you plan to stay here? Seven days, okay, thank you."],  
-    ["这个航班上有卖免费商品吗？", "Are there any free items for sale on this flight?"], 
-    ["行李检查", "Luggage inspection"],  
-    ["请把你的行李拿过来检查。好的，先生。你所有的行李都在这里了吗？是的，一个相机包一个旅行袋和一个行李箱。有什么要申报的吗？没有，我只有一些私人用品。", "Please bring your luggage for inspection. Alright, sir. Are all your luggage here? Yes, a camera bag, a travel bag and a suitcase. Do you have anything to declare? No, I only have some personal belongings."],  
-    ["在哪里可以换钱？", "Where can I change money?"],  
-    ["请问我可以到哪里换钱？到那边的银行。请问哪一个窗口可以兑换外币，请到8号窗口办理。", "Excuse me, where can I change money? At the bank over there. Excuse me, which window can I exchange foreign currency at? Please go to window 8."],  
-    ["换小钞", "Split the money."],
-    ["麻烦你帮我换成零钱。我想兑换¥100元，钱在这里。你要怎么换？我要八张¥10元的，其他的换零钱。如果我的英镑用不完该怎么办？", "Could you help me change the money into smaller denominations? I want to exchange ¥100. Here's the money. How do you want me to change it? I want eight ¥10 bills and the rest in smaller denominations. What should I do if I can't use all my British pounds?"]  
+var Airport = [    
+    ["Transit time", "过境停留时间"],    
+    ["Entry card", "入镜卡"],    
+    ["Customs declaration form", "关税申报表"],    
+    ["Customs", "海关"],    
+    ["Customs clearance", "通关"],    
+    ["Resident", "居民"],    
+    ["Non-resident", "非居民"],    
+    ["Foreigner", "外国人"],    
+    ["Luggage inspection", "行李检查"],    
+    ["Luggage lost and found", "行李遗失招领处"],    
+    ["Tariff", "关税"],    
+    ["Duty-free", "免税的"],    
+    ["Duty-free allowance", "免税额"],    
+    ["Paying taxes", "付税"],    
+    ["Personal belongings", "私人物品"],    
+    ["For personal use", "自己要用的"],    
+    ["Prohibited items", "违禁品"],    
+    ["Entry desk", "入镜柜台"],    
+    ["Please show me your passport and entry registration form", "请出示您的护照和入镜登记表"],    
+    ["Here you go. What's the purpose of your visit? I'm here for sightseeing. How many days do you plan to stay here? Seven days, okay, thank you.", "给您。您来的目的是什么？我是来观光的。你打算在这里呆几天？七天，好的，谢谢。"],    
+    ["Are there any free items for sale on this flight?", "这个航班上有卖免费商品吗？"],   
+    ["Please bring your luggage for inspection. Alright, sir. Are all your luggage here? Yes, a camera bag, a travel bag and a suitcase. Do you have anything to declare? No, I only have some personal belongings.", "请把你的行李拿过来检查。好的，先生。你所有的行李都在这里了吗？是的，一个相机包一个旅行袋和一个行李箱。有什么要申报的吗？没有，我只有一些私人用品。"],    
+    ["Where can I change money?", "在哪里可以换钱？"],    
+    ["Excuse me, where can I change money? At the bank over there. Excuse me, which window can I exchange foreign currency at? Please go to window 8.", "请问我可以到哪里换钱？到那边的银行。请问哪一个窗口可以兑换外币，请到8号窗口办理。"],    
+    ["Split the money.", "换小钞"],  
+    ["Could you help me change the money into smaller denominations? I want to exchange ¥100. Here's the money. How do you want me to change it? I want eight ¥10 bills and the rest in smaller denominations. What should I do if I can't use all my British pounds?", "麻烦你帮我换成零钱。我想兑换¥100元，钱在这里。你要怎么换？我要八张¥10元的，其他的换零钱。如果我的英镑用不完该怎么办？"]    
 ];  //已添加
 
-var TaxiData = [  
-    ["搭计程车", "Take a taxi"],  
-    ["女士要去哪里？请到邦德街，我要赶傍晚6:00的火车。邦德街到了。", "Where to, ma'am? Please take me to Bond Street. I need to catch the 6:00 pm train. We've arrived at Bond Street."],  
-    ["先生，请问要去哪里？到这个地方。唐人街呀，没问题。车程大概多久，大概20分钟。饭店到了。", "Sir, where to? Take me to this place. It's Chinatown. No problem. How long will the ride take, about 20 minutes. We've arrived at the restaurant."],  
-    ["到机场要多少钱？我们是照表收费的。好吧，请上车麻烦打开后备箱，好吗？现在司机和前排乘客必须记上安全带，请问要去哪里？牛津街2床公寓。可以送我们去大英博物馆吗？请送我去这个地址请到这个地方。", "How much does it cost to the airport? We charge by the meter. Alright, please get in the car. Could you open the trunk, please? Now, both the driver and front passengers must wear seat belts. Where to? The 2-bed apartment on Oxford Street. Can you take us to the British Museum? Please take me to this address. Please go to this place."],
-    ["请问你能带我去吗[目的地]","Can you take me to [目的地], please?"],
-    ["请问你能让我在下车吗[目的地]","Could you drop me off at [目的地], please?"]
+var TaxiData = [    
+    ["Take a taxi", "搭计程车"],    
+    ["Where to, ma'am? Please take me to Bond Street. I need to catch the 6:00 pm train. We've arrived at Bond Street.", "女士要去哪里？请到邦德街，我要赶傍晚6:00的火车。邦德街到了。"],    
+    ["Sir, where to? Take me to this place. It's Chinatown. No problem. How long will the ride take, about 20 minutes. We've arrived at the restaurant.", "先生，请问要去哪里？到这个地方。唐人街呀，没问题。车程大概多久，大概20分钟。饭店到了。"],    
+    ["How much does it cost to the airport? We charge by the meter. Alright, please get in the car. Could you open the trunk, please? Now, both the driver and front passengers must wear seat belts. Where to? The 2-bed apartment on Oxford Street. Can you take us to the British Museum? Please take me to this address. Please go to this place.", "到机场要多少钱？我们是照表收费的。好吧，请上车麻烦打开后备箱，好吗？现在司机和前排乘客必须记上安全带，请问要去哪里？牛津街2床公寓。可以送我们去大英博物馆吗？请送我去这个地址请到这个地方。"],  
+    ["Can you take me to [目的地], please?", "请问你能带我去吗[目的地]"],  
+    ["Could you drop me off at [目的地], please?", "请问你能让我在下车吗[目的地]"]  
 ]; //已添加
 
-var Waytohotel = [  
-    ["到机场要多少钱？我们是照表收费的。好吧，请上车麻烦打开后备箱，好吗？", "How much does it cost to the airport? We charge by the meter. Alright, please get in the car. Could you open the trunk, please? "],  
-    ["现在司机和前排乘客必须记上安全带，请问要去哪里？牛津街2床公寓。可以送我们去大英博物馆吗？请送我去这个地址请到这个地方。","Now, both the driver and front passengers must wear seat belts. Where to? The 2-bed apartment on Oxford Street. Can you take us to the British Museum? Please take me to this address. Please go to this place."],
-    ["我必须在9:00前赶到机场可以赶到吗？不要开太快哦，我们遇到堵车了，酒店到了请在这里停车在这里让我下车，我自己走路去公园。", "Can we make it to the airport before 9:00? Please don't drive too fast, we're stuck in traffic. Please stop the car here. I'll walk to the park."],
-    ["我要在下个十字路口下车，麻烦停在大本钟前面对不起，我不能在伦敦桥停车，伦敦桥不准停车。我该付你多少钱？","I need to get off at the next intersection. Could you please pull over in front of Big Ben? Sorry, but I can't park at London Bridge, it's not allowed. How much do I owe you?"],
+var Waytohotel = [    
+    ["How much does it cost to the airport? We charge by the meter. Alright, please get in the car. Could you open the trunk, please?", "到机场要多少钱？我们是照表收费的。好吧，请上车麻烦打开后备箱，好吗？"],    
+    ["Now, both the driver and front passengers must wear seat belts. Where to? The 2-bed apartment on Oxford Street. Can you take us to the British Museum? Please take me to this address. Please go to this place.", "现在司机和前排乘客必须记上安全带，请问要去哪里？牛津街2床公寓。可以送我们去大英博物馆吗？请送我去这个地址请到这个地方。"],  
+    ["Can we make it to the airport before 9:00? Please don't drive too fast, we're stuck in traffic. Please stop the car here. I'll walk to the park.", "我必须在9:00前赶到机场可以赶到吗？不要开太快哦，我们遇到堵车了，酒店到了请在这里停车在这里让我下车，我自己走路去公园。"],  
+    ["I need to get off at the next intersection. Could you please pull over in front of Big Ben? Sorry, but I can't park at London Bridge, it's not allowed. How much do I owe you?", "我要在下个十字路口下车，麻烦停在大本钟前面对不起，我不能在伦敦桥停车，伦敦桥不准停车。我该付你多少钱？"]   
 ];  //已添加
 
-var TrainStation = [  
-    ["在英国坐火车", "Taking the train in the UK"],  
-    ["赶火车", "Catching the train"],  
-    ["售票处", "Ticket office"],  
-    ["票价", "Ticket price"],  
-    ["单程票", "Single ticket"],  
-    ["往返票", "Return ticket"],  
-    ["卧铺车", "Sleeper train"],  
-    ["换车", "Changing trains"],  
-    ["直达车", "Direct train"],  
-    ["慢车", "Slow train"],  
-    ["退票", "Refunding a ticket"],  
-    ["普通车厢", "Standard class"],  
-    ["短程旅行", "Short trip"],  
-    ["早安，请告诉我去科茨沃尔德的火车发车时间。", "Good morning, could you tell me what time the trains to Cotswolds depart?"],  
-    ["好的7:59 9:18和10:32各有一趟", "Sure, there are trains at 7:59, 9:18, and 10:32."],  
-    ["7:59的火车几点到科茨沃尔德？", "What time does the 7:59 train arrive in Cotswolds?"],  
-    ["9:36分。", "At 9:36."],  
-    ["回程的时间呢，我想在晚上7:00左右回来。", "What about the return times? I want to come back around 7:00 pm."],  
-    ["晚上7:10有一趟，在下一班是7:40分。", "There's a train at 7:10 pm, and the next one is at 7:40 pm."],  
-    ["往返票多少钱？", "How much is a return ticket?"],  
-    ["如果您在下午4:00之前或6:00之后上车，有票价为九英镑的优惠往返票，普通往返票要16英镑。", "If you board before 4:00 pm or after 6:00 pm, there's a discounted return ticket for £9. The standard return ticket is £16."],  
-    ["请给我普通往返票。", "I'll take the standard return ticket, please."]  
+var TrainStation = [    
+    ["Taking the train in the UK", "在英国坐火车"],    
+    ["Catching the train", "赶火车"],    
+    ["Ticket office", "售票处"],    
+    ["Ticket price", "票价"],    
+    ["Single ticket", "单程票"],    
+    ["Return ticket", "往返票"],    
+    ["Sleeper train", "卧铺车"],    
+    ["Changing trains", "换车"],    
+    ["Direct train", "直达车"],    
+    ["Slow train", "慢车"],    
+    ["Refunding a ticket", "退票"],    
+    ["Standard class", "普通车厢"],    
+    ["Short trip", "短程旅行"],    
+    ["Good morning, could you tell me what time the trains to Cotswolds depart?", "早安，请告诉我去科茨沃尔德的火车发车时间。"],    
+    ["Sure, there are trains at 7:59, 9:18, and 10:32.", "好的7:59 9:18和10:32各有一趟"],    
+    ["What time does the 7:59 train arrive in Cotswolds?", "7:59的火车几点到科茨沃尔德？"],    
+    ["At 9:36.", "9:36分。"],    
+    ["What about the return times? I want to come back around 7:00 pm.", "回程的时间呢，我想在晚上7:00左右回来。"],    
+    ["There's a train at 7:10 pm, and the next one is at 7:40 pm.", "晚上7:10有一趟，在下一班是7:40分。"],    
+    ["How much is a return ticket?", "往返票多少钱？"],    
+    ["If you board before 4:00 pm or after 6:00 pm, there's a discounted return ticket for £9. The standard return ticket is £16.", "如果您在下午4:00之前或6:00之后上车，有票价为九英镑的优惠往返票，普通往返票要16英镑。"],    
+    ["I'll take the standard return ticket, please.", "请给我普通往返票。"]    
 ];  //已添加
 
-var TrainSchedule = [  
-    ["请问离这里最近的火车站在哪里？", "Excuse me, where is the nearest train station?"],  
-    ["请问离这里最近的地铁站在哪里？", "Excuse me, where is the nearest subway station?"],  
-    ["我可以定位吗？", "Can I get directions?"],  
-    ["那趟车不必订位，因为从来就做不满。", "That train doesn't require reservations because it never fills up."],  
-    ["去剑桥大学该搭哪一趟车？", "Which train should I take to Cambridge University?"],  
-    ["去伦敦可以坐这趟车吗？", "Can I take this train to London?"],  
-    ["请问到唐人街要搭哪一条线？", "Which line should I take to get to Chinatown?"],  
-    ["先搭蓝线第七街再转红线。", "Take the blue line to 7th Street and transfer to the red line."],  
-    ["这趟车会停西敏寺吗？", "Does this train stop at Westminster?"],  
-    ["火车何时进站？", "When does the train arrive?"],  
-    ["下一趟到牛津的车几点开？", "What time does the next train to Oxford leave?"],  
-    ["下一趟车6:30从20号站台开出。", "The next train departs from platform 20 at 6:30."],  
-    ["火车什么时候到伦敦？几点会到那里？", "When does the train arrive in London? What time will it get there?"],  
-    ["按照列车时刻表是11:50到，中午会到。我可以看一下时刻表吗？", "According to the train schedule, it's scheduled to arrive at 11:50. It should be there by noon. Can I see the schedule?"],  
-    ["对不起，我想请问一下去剑桥的火车时刻。", "Excuse me, I was wondering about the train schedule to Cambridge."]  
+var TrainSchedule = [    
+    ["Excuse me, where is the nearest train station?", "请问离这里最近的火车站在哪里？"],    
+    ["Excuse me, where is the nearest subway station?", "请问离这里最近的地铁站在哪里？"],    
+    ["Can I get directions?", "我可以定位吗？"],    
+    ["That train doesn't require reservations because it never fills up.", "那趟车不必订位，因为从来就做不满。"],    
+    ["Which train should I take to Cambridge University?", "去剑桥大学该搭哪一趟车？"],    
+    ["Can I take this train to London?", "去伦敦可以坐这趟车吗？"],    
+    ["Which line should I take to get to Chinatown?", "请问到唐人街要搭哪一条线？"],    
+    ["Take the blue line to 7th Street and transfer to the red line.", "先搭蓝线第七街再转红线。"],    
+    ["Does this train stop at Westminster?", "这趟车会停西敏寺吗？"],    
+    ["When does the train arrive?", "火车何时进站？"],    
+    ["What time does the next train to Oxford leave?", "下一趟到牛津的车几点开？"],    
+    ["The next train departs from platform 20 at 6:30.", "下一趟车6:30从20号站台开出。"],    
+    ["When does the train arrive in London? What time will it get there?", "火车什么时候到伦敦？几点会到那里？"],    
+    ["According to the train schedule, it's scheduled to arrive at 11:50. It should be there by noon. Can I see the schedule?", "按照列车时刻表是11:50到，中午会到。我可以看一下时刻表吗？"],    
+    ["Excuse me, I was wondering about the train schedule to Cambridge.", "对不起，我想请问一下去剑桥的火车时刻。"]    
 ]; //已添加
 
 
@@ -267,7 +266,6 @@ generateTable("购物", shoppingData);
 generateTable("登机篇",checkInData);
 generateTable("机场过关",airportAnnouncements);
 generateTable("机场词汇",airportTerms);
-/*
 generateTable("机场第二篇",Airport);
 generateTable("去牛津街海德公园住处", OxfordapartmentData);
 generateTable("去酒店路上",Waytohotel);
@@ -279,7 +277,5 @@ generateTable("问路", askdirData);
 generateTable("火车行程表",TrainSchedule);
 generateTable("火车站询问",TrainStation);
 
-
-*/
 
 
