@@ -1,3 +1,4 @@
+/*
 function readTextWithAssistiveReading(text) {  
     // 创建辅助功能元素  
     const assistiveText = document.createElement('div');  
@@ -20,9 +21,9 @@ readableElements.forEach(element => {
 });
 
 
+*/
 
 
-/*
 // Function to read general text
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -38,5 +39,5 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
-*/
+
 
