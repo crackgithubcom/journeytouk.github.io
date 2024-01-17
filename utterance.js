@@ -1,4 +1,4 @@
-/*
+
 // 获取所有的语音合成器声音  
 const voices = speechSynthesis.getVoices();  
   
@@ -25,10 +25,10 @@ readableElements.forEach(element => {
         readText(element.innerText);  
     });  
 });
-*/
 
 
 
+/*
 
 // Function to read general text
 function readText(text) {
@@ -45,5 +45,5 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
-
+*/
 
