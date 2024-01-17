@@ -20,8 +20,8 @@ readableElements.forEach(element => {
     });  
 });
 
-
 */
+
 
 
 // Function to read general text
@@ -39,5 +39,4 @@ readableElements.forEach(element => {
         readText(element.innerText);
     });
 });
-
 
