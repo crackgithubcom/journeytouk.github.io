@@ -1,16 +1,29 @@
-
 function readText(text) {
     const utterance = new SpeechSynthesisUtterance(text);
 
-    // 尝试选择英语（英国）的男性语音
-    const britishMaleVoice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-GB' && voice.gender === 'male');
+    // 为了在 iPhone 上工作，可能需要设置语言为 'en-US' 或其他支持的语言
+    utterance.lang = 'en-US';
+
+    // 在 iPhone 上，尝试选择支持的语音（例如 Siri 的语音）
+    const iosVoice = speechSynthesis.getVoices().find(voice => voice.lang === 'en-US');
     
-    // 如果找到符合条件的语音，则设置为该语音；否则使用默认语音
-    if (britishMaleVoice) {
-        utterance.voice = britishMaleVoice;
+    if (iosVoice) {
+        utterance.voice = iosVoice;
     }
 
-    speechSynthesis.speak(utterance);
+    // 在 IE 上，SpeechSynthesisUtterance 不支持 'voice' 属性
+    if (window.speechSynthesis.speak !== undefined) {
+        speechSynthesis.speak(utterance);
+    } else {
+        // 在 IE 上使用其他兼容的方法来朗读文本
+        // 例如可以使用 <speak> 标签
+        // 注意：这是一种不同的方法，可能需要根据具体情况进一步调整
+        var speakElement = document.createElement('speak');
+        speakElement.innerText = text;
+        document.body.appendChild(speakElement);
+        speakElement.click();  // 触发朗读
+        document.body.removeChild(speakElement);
+    }
 }
 
 // 在获取语音列表后再执行读取文本的操作
@@ -25,6 +38,7 @@ speechSynthesis.onvoiceschanged = () => {
         });
     });
 };
+
 
 
 
