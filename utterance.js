@@ -25,7 +25,6 @@ readableElements.forEach(element => {
         readText(element.innerText);  
     });  
 });
-
 */
 
 
