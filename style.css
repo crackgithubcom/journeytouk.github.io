@@ -1,6 +1,7 @@
 .centered{
   text-align: center;
-  font-size: 77px;
+  font-size: 25px;
+  overflow-wrap: break-word;
 }
 .large{
   font-size: 50px;
