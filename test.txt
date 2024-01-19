@@ -64,23 +64,31 @@ May I ask what they ordered? I want the same, I want this and this. Would you li
 My fork fell off, can you give me another one? The dishes I ordered haven't arrived yet, we've been ordering for half an hour already. I didn't order this meat, but it's still raw. This dish is too salty. This dish is too oily, it's too spicy. This dish has no taste. Can I cancel my order? Can you help me add water? Have you finished eating? Not yet. Please help me pack the rest. What time do you close? Bury the bill. What is this fee?
 我的叉子掉了，可以再给我一把吗？我点的菜还没来，我们已经点了半个小时了。我没有点这个这个肉还是生的。这道菜太咸了。这道菜太油了，这道菜太辣了。这道菜没味道。我可以取消我的点餐吗？请帮我加水好吗？请问您吃完了吗？还没。请帮我把剩下的打包。你们几点打烊？埋单。这笔费用是什么？
 
-快餐店
+I want two sets of meals for number 3. Okay, what would you like to drink? Cola. Is it a regular cup or a large one? Regular cup. Okay, what else would you like to order? No more. Dine in or take out? Good afternoon, madam. What would you like to order? I would like a pair of spicy chicken wings, a portion of French fries, and a milkshake. May I ask what flavor you want? I don't know, what are the flavors you have? There are flavors of strawberries, chocolate, vanilla, and bananas. Okay, I want banana flavor. Do you need anything else? No need, thank you. That's good. I want a beef burger. I want two cheese burgers. I want a large potato. I want a cheese burger and a portion of French fries, I want a milkshake, and he wants a cup of milk tea. What flavor of milkshake do you want? A glass of cola to go. Is it a large or regular cup? Two sets of table number 4. What kind of sauce do you want? Tomato sauce, I want two pieces of fried chicken. I want chicken breast, not chicken legs, and I don't want pickled cucumbers in my hamburger. Don't add onions to my hamburger. Do you need to wait for the French fries for another 2 minutes? Do you need anything else to order? No need, that's all. Can I have it for dine in or takeout? I want to take it out, I want to take a large pack of French fries and a large glass of cola. Can I have another pack of tomato sauce? I ordered a cheese burger, not a fish burger. Do you have a straw? I need some napkins. Where are napkins and straws? May I ask if coffee can be refilled? Can I get a free refill? Is this seat occupied? Can I sit here? Can we share a table with you?
 我要两份3号套餐。好的，饮料要喝什么？可乐。普通杯还是大杯的？普通杯。好的还要点些什么吗？没有了。堂吃或外带？下午好，女士。您要点什么？我想要一对香辣鸡翅，一份薯条和一份奶昔。请问你要什么口味的？我也不知道，你们有哪几种口味？有草莓、巧克力、香草和香蕉口味。好，我要香蕉口味的。还要什么吗？不用了，谢谢。这样就好。我要一个牛肉汉堡。我要两个芝士汉堡。我要一份大薯。我要一个芝士汉堡和一份薯条，我要一杯奶昔，他要一杯奶茶。你要什么口味的奶昔？一杯可乐外带。大杯的还是普通杯？两份4号桌。你要哪一种酱汁？番茄酱，我要两块炸鸡。我要鸡胸肉，不要鸡腿肉，我的汉堡里不要加腌黄瓜。我的汉堡不要加洋葱。薯条还要等2分钟您要等吗？还需要点些什么吗？不用，就要这些，请问堂吃或外带？我要外带，我要外带一包大份薯条和一杯大杯可乐。可以再给我一包番茄酱吗？我点的是芝士汉堡不是鱼堡。有没有吸管？我需要一些餐巾纸。哪里有餐巾纸和吸管？请问咖啡可以续杯吗？可以免费续杯吗？这个座位有人吗？我可以坐这里吗？可以跟你们共用一张桌子吗？
 
-逛超市买水果等
+Do you have any apples, please? Yes, the apples are over there. Is it sold by individual or by weight? Sell by the pound. A beautiful stick costs 10 pounds. Can you take advantage of these for a while? 4.55 pounds. Do you need anything else? Please give me a bag of oranges. Here you are.
+Is there a supermarket near here? What time do you close? May I ask which aisle the toothbrush is in?
+Is there a shopping center near here? Does that store open on Sundays? May I know the operating hours of that store from what time to what time? Excuse me, where is the elevator? I'm just looking. Can I just look around and touch it? Can I take a look at the handbag placed in the second row on the second shelf? I won't buy it today for now. I will consider it again, thank you.
 请问你们有苹果吗？有，苹果在那边。是论个卖还是论斤卖？论斤卖。美棒10英镑。趁一下这些好吗？4.55英镑。还要其他的吗？请给我一袋橘子。给您。
 这附近有没有超市？你们几点打烊？请问牙刷在哪一条走道？
 这附近有购物中心吗？那家店星期天开门吗？请问那家店的营业时间是几点到到几点？请问电梯在哪里？我只是看看而已。我只是随便看看可以摸吗？我可以看看放在第二个架子上第二排的那个手提包吗？我今天先不买了，我会再考虑一下，谢谢。
 
-照相
+Excuse me, can you help us take a photo? No problem, just click here. May I take a photo with you? Can I take a photo of you? Smile. Smile. Can we take a photo together? May I take a photo with you? Can I take another photo here? Can I take photos here? Can I use a flash? Can I record a video?
 不好意思，可以帮我们拍张照吗？没问题，按这里就可以了。可以跟您合影吗？我可以拍一张你的照片吗？笑一笑。笑一个。可以一起照张相吗？我可以和你合照吗？再拍一张我可以在这里拍照吗？这里可以拍照吗？可以用闪光灯吗？我可以录像吗？
 
+Can you teach me how to install a UK card? Can you teach me how to use a UK card? May I ask which direction the subway station is heading to? Do I need to take the 1st subway (Elizabeth Line) to get off at Bond Street when I go to Oxford Street Two Beds Apartment? Can you teach me how to buy a subway ticket?
 能教我安装英国卡吗？能教我使用英国卡吗？请问一下地铁站往哪边走？我要去牛津街二二床公寓是坐一号地铁（伊丽莎白线）到邦德街下车吗？能教一下我如何买地铁票吗？
 
-
+How can I buy a subway ticket in London?
+1. Buy an oyster card first
+2. To buy a ticket, don't look at the name first, look for the color, then look for the platform, determine the direction, and then look for the destination.
 怎么在伦敦买地铁票？
 1、先购买一张生蚝卡
 2、买票先不看名，先找颜色，然后找站台，确定方向，再找目的地。
 
-买地铁票界面
+According to the destination. One day ticket, travel card extension. The map of London is divided into six districts. For example, selecting the travel card extension can display up to Zone 3. The first step is to input the destination, place name letters, select a one-way ticket, display the fare, confirm in the upper right corner, and then make payment
 根据目的地。一日票，旅行卡扩展。伦敦地图分六个区。例如，选择旅行卡扩展，可显示到3区。第一部输入目的地，输入地名字母，选择单程票，显示车费，右上角确认，然后付款
+
+Cotswold, Hyde Park, Buckingham Palace, Big Ben, the London Eye, the British Museum, the Natural History Museum, Maribonne Street, Oxford Street Chinatown, Baltic Market Linnig, Cambridge, Oxford, Kingston, Southampton, Isle of Wight, Bath, Birmingham, Coventry, Stoke, Nottingham, Derby, Lincoln, Manchester, Liverpool, Carlisle, York, Leeds, Bradford, Newcastle, Sunderland
+科茨沃尔德，海德公园，白金汉宫，大本钟，伦敦眼，大英博物馆， 自然史博物馆，马里波恩街区，牛津街中国城，波罗市集）林尼治，剑桥，牛津，金斯顿，南安普敦，怀特岛，巴斯，伯明翰，考文垂，斯托克，诺丁汉，徳比，林肯，曼彻斯特，利物浦，卡莱尔，约克，利兹，布拉德福德，纽卡斯尔，森德兰
