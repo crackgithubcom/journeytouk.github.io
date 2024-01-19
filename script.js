@@ -1,8 +1,13 @@
 // script.js
 
-//"+" id=\"section"+section.tostring()+"\"
-function generateTable(title, data, n) {  
-    document.write("<h2 id=\"section" + n.toString() + "\">" + title + "</h2>");
+var lastSectionNumber = 0;
+
+function generateTable(title, data) {
+    // Increment the section number for each call
+    lastSectionNumber++;
+
+    // Output the HTML with the updated section number
+    document.write("<h2 id=\"section" + lastSectionNumber + "\">" + title + "</h2>");
     document.write("<table border='1' class='row'>");
     document.write("<tr><th>英文</th><th>解释</th></tr>");
 
@@ -16,7 +21,6 @@ function generateTable(title, data, n) {
     }
 
     document.write("</table>");
-
 }
 
 
@@ -209,7 +213,38 @@ var jichangdanci = [
     ["Cockpit", "驾驶舱"],
 ];//已添加
 
-
+var diming = [
+    ["Cotswold", "科茨沃尔德"],
+    ["Hyde Park", "海德公园"],
+    ["Buckingham Palace", "白金汉宫"],
+    ["Big Ben", "大本钟"],
+    ["the London Eye", "伦敦眼"],
+    ["the British Museum", "大英博物馆"],
+    ["the Natural History Museum", "自然史博物馆"],
+    ["Marylebone Street", "马利本街"],
+    ["Oxford Street Chinatown", "牛津街中国城"],
+    ["Borough Market Linnig", "波罗市集林尼"],
+    ["Cambridge", "剑桥"],
+    ["Oxford", "牛津"],
+    ["Kingston", "金斯顿"],
+    ["Southampton", "南安普敦"],
+    ["Isle of Wight", "怀特岛"],
+    ["Bath", "巴斯"],
+    ["Birmingham", "伯明翰"],
+    ["Coventry", "考文垂"],
+    ["Stoke", "斯托克"],
+    ["Nottingham", "诺丁汉"],
+    ["Derby", "德比"],
+    ["Lincoln", "林肯"],
+    ["Manchester", "曼彻斯特"],
+    ["Liverpool", "利物浦"],
+    ["Carlisle", "卡莱尔"],
+    ["York", "约克"],
+    ["Leeds", "利兹"],
+    ["Bradford", "布拉德福德"],
+    ["Newcastle", "纽卡斯尔"],
+    ["Sunderland", "桑德兰"]
+];
 
 //-------------------------------------------------------------------------------------
 
@@ -231,13 +266,13 @@ var shoppingData = [
 
 
 // Call the function with different data for each section
-generateTable("机场篇", jichangpian, 1);
-generateTable("问路篇", wenlupian, 2);
-generateTable("打车篇",dachepian,3);
-generateTable("饭店篇",fandianpian,4);
-generateTable("火车篇",huochepian,5)
-generateTable("机场单词",jichangdanci,6);
-
+generateTable("机场篇", jichangpian);
+generateTable("问路篇", wenlupian);
+generateTable("打车篇",dachepian);
+generateTable("饭店篇",fandianpian);
+generateTable("火车篇",huochepian)
+generateTable("机场单词",jichangdanci);
+generateTable("地名汇总",diming);
 /*
 
 generateTable("登机篇",checkInData, 3);

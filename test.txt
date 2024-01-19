@@ -1,16 +1,16 @@
 var Wayto = [
-["I want to buy a first-class one-way ticket to London. I want to buy a train ticket to Giant's Causeway.", "我想买一张到伦敦的头等单程票。我想买一张到巨石证的火车票。"],
-["Two roundtrip tickets to tomorrow, non-smoking compartments. Is it a fast train? This is a slow train. I want to take the express, not the local.", "两张，明天的往返票，无烟车厢的。是快车吗？这般是慢车。我要搭快车，不要慢车。"],
-["One berth ticket to Canterbury town. I want a berth ticket to Dover's White Cliffs. Can I have a lower berth ticket? Is the journey far? What is the fare? How much does the train ticket to the Seven Sisters cost? How much is the roundtrip? The one-way fare is 30 pounds, and the roundtrip is 55 pounds. Do I have to change trains? You don't have to transfer, it's usually a direct express train.", "一张到坎特伯雷小镇的卧铺票。我要一张到多弗白崖的卧铺票。能给我一张下铺票吗？路程远不远？票价多少？去七姐妹的火车票多少钱一张？往返票多少钱？单程票价30英镑，往返票价55英镑。我要换车吗？你不必转车，这一般是直达快车。"]
+    ["I want to buy a first-class one-way ticket to London. I want to buy a train ticket to Giant's Causeway.", "我想买一张到伦敦的头等单程票。我想买一张到巨石证的火车票。"],
+    ["Two roundtrip tickets to tomorrow, non-smoking compartments. Is it a fast train? This is a slow train. I want to take the express, not the local.", "两张，明天的往返票，无烟车厢的。是快车吗？这般是慢车。我要搭快车，不要慢车。"],
+    ["One berth ticket to Canterbury town. I want a berth ticket to Dover's White Cliffs. Can I have a lower berth ticket? Is the journey far? What is the fare? How much does the train ticket to the Seven Sisters cost? How much is the roundtrip? The one-way fare is 30 pounds, and the roundtrip is 55 pounds. Do I have to change trains? You don't have to transfer, it's usually a direct express train.", "一张到坎特伯雷小镇的卧铺票。我要一张到多弗白崖的卧铺票。能给我一张下铺票吗？路程远不远？票价多少？去七姐妹的火车票多少钱一张？往返票多少钱？单程票价30英镑，往返票价55英镑。我要换车吗？你不必转车，这一般是直达快车。"]
 ];
 
 
 var Platform = [
-["Where can I catch the train to Oxford? ", "去牛津在哪个站台搭车？"],
-["Which platform does this train depart from? Please go to platform 7. Where is Platform 4? ", "这趟火车由第几站台开出？请去7号站台。4号站台在哪里？"],
-["Go through the door on your left side, then go down the stairs, and you will be at platform 4. ","穿过你左手边的那道门，再下楼梯，那你就是4号站台。"],
-["Is this the right bus to Brighton Seven sisters White Cliff? Is this bus for the town of Cotswold?","这趟车是到布莱顿七姐妹白崖的吗？这趟车是去科茨沃尔德小镇的车吗？"],
-["I got on the wrong train. I want to get a refund. ", "我搭错车了，我想要退票。"]
+    ["Where can I catch the train to Oxford? ", "去牛津在哪个站台搭车？"],
+    ["Which platform does this train depart from? Please go to platform 7. Where is Platform 4? ", "这趟火车由第几站台开出？请去7号站台。4号站台在哪里？"],
+    ["Go through the door on your left side, then go down the stairs, and you will be at platform 4. ","穿过你左手边的那道门，再下楼梯，那你就是4号站台。"],
+    ["Is this the right bus to Brighton Seven sisters White Cliff? Is this bus for the town of Cotswold?","这趟车是到布莱顿七姐妹白崖的吗？这趟车是去科茨沃尔德小镇的车吗？"],
+    ["I got on the wrong train. I want to get a refund. ", "我搭错车了，我想要退票。"]
 ];
 
 
@@ -24,92 +24,381 @@ var what = [
     ["Is there a dining car on this bus? The dining car is in the seventh carriage. ","这班车上有餐车吗？餐车在第七车厢。"],
     ["Do I need to book a seat in the dining car? I would like to book a seat for four people tonight at 6:30. ","我需要预定餐车的座位吗？我想预定今晚6:30，四个人的位子。"],
     ["May I ask which exit is available in the evening hall?","请问晚堂能接的出口是哪一个？"]
-    ];
+];
 
-var what = [
-    ["",""],
-    ["",""],
-    ["",""],
-    ["",""],
-    ["",""],
-    ["",""]
-    ];
 
-var what = [
+
+
+
+var carRentalData = [
+    ["Do you want insurance?", "您要不要保险？"],
+    ["I want to add full insurance. That day will add an extra five pounds.", "我要加全险。那一天要多加五英镑。"],
+    ["Where can I rent a car? I want to rent a car, I want to rent a small car.", "哪里可以租车，我想要租车，我想要租一台小型车。"],
+    ["How long do you want to rent it? Four days.", "你要租多久？四天。"],
+    ["Is there a parking lot nearby? Can I park my car here?", "附近有停车场吗？我可以把车停在这里吗？"],
+    ["We must drive on the right. What is the urban speed limit?", "我们必须靠右行驶。市区限速是多少？"],
     ["I want to rent a car. What kind of car do you have? ","我想要租车。你们有什么车？"],
     ["We have Honda, Citroen, and Toyota cars. Which one do you want? ","我们有本田、雪铁龙和丰田的车，您想要哪一种？"],
-    ["I want to rent a Citroen C2, and the rent is 300 pounds per day.","那我要租雪铁龙的C 2,租金一天多少一天300英镑。"],
-    ["",""],
-    ["",""],
-    ["",""]
-    ];
+    ["I want to rent a Citroen C2, and the rent is 300 pounds per day.","那我要租雪铁龙的C 2,租金一天多少一天300英镑。"]
+];
+
+
+var travelDialogues = [
+    ["Excuse me, how can I get to the Tate Museum of Modern Art?", "不好意思，请问去泰特现代美术馆怎么走？"],
+    ["Oh, just walk along the main road and you'll find it. How long will it take to get there?", "哦，沿着大路往前走，就可以找到。到那里大概要多久？"],
+    ["Thank you.", "非常感谢。"],
+    ["You're welcome.", "不用客气。"],
+    ["Good morning, madam. I think I'm lost. I want to go to Hyde Park. Do you know which region it is?", "女士，早安。我想我迷路了，我想去海德公园。你知道是哪一个地区吗？"],
+    ["Sorry, I didn't know I hadn't been here before. Well, do you know any landmarks near the hotel?", "对不起，我不知道我没有来过这里。这样啊，那你知道饭店附近有什么地标吗？"],
+    ["Oh, you know my friend said it's near Buckingham Palace, so you need to take a bus to Buckingham Palace.", "哦，知道我朋友说是白金汉宫附近，那你需要坐公交车到白金汉宫。"],
+    ["Can you please point me to where the St. Paul's Cathedral is on the map?", "可不可以请你给我指一下，圣保罗大教堂在地图上的什么地方呢？"],
+    ["Sure, I'm sorry, could you please help me? I got lost. Which street is this? Where are we on the map?", "可以啊，对不起可不可以请您帮个忙，我迷路了。这是哪一条街？我们在地图上的哪个位置？"],
+    ["Excuse me, where is the train station?", "请问火车站在哪里？"],
+    ["I am looking for Hilton Hotel.", "我想找希尔顿饭店。"],
+    ["May I ask how to get to the Tate Museum of Modern Art? How can I get there?", "请问去泰特现代艺术博物馆怎么走？怎么才可以到那里？"],
+    ["Sorry, I'm looking for a supermarket. Is there any nearby?", "对不起，我在找超市，这附近有吗？"],
+    ["I don't know, I'm not familiar with this place either.", "我也不知道，我对这里也不熟。"],
+    ["Cross the road and you will see the University of Cambridge. Just cross the road from here.", "穿过马路，你就会看到剑桥大学。从这里过马路就是了。"],
+    ["You can walk back along this road for about 3 minutes and find Oxford University.", "你沿这条路往回走，大约3分钟，就可以找到牛津大学。"],
+    ["Walk along this road and you will find that homestay.", "沿这条路往前走，你就可以找到那间民宿。"],
+    ["Keep going straight on the second road on the left.", "从左边第二条马路一直往前走。"],
+    ["Please walk to the end of this road. Turn left at the first intersection, and the second building on the left will be there.", "请走到这条马路的尽头。在第一个路口左转，左边第2栋大楼就是了。"],
+    ["Go there and pass through three streets, then turn right. After passing the first two streets, you can see it.", "往那里走经过三条街，然后向右转。过了前面两条街就可以看到了。"],
+    ["Hmm, let me think about it. Oh, by the way, it's right around the corner.", "嗯，让我想想看。哦，对了，就在转角的地方。"]
+];
+
+
+var navigationData = [
+    ["Can you help me mark it?", "你帮我标明一下好吗？"],
+    ["Are there any signs along the way?", "一路上有什么标识吗？"],
+    ["Are there any obvious landmarks?", "有什么明显的地标吗？"],
+    ["Can you show me the address?", "地址给我看一下好吗？"],
+    ["Let me take you there. I happen to be going there.", "让我带你去吧，我正好要去那里。"],
+    ["I'll help you guide the way. Can we get there in 10 minutes?", "我帮你带路，我们10分钟内到得了那里吗？"],
+    ["How far is this from London?", "这里离伦敦远多远？"],
+    ["How long will it take me to get there?", "我到那里要多久？"],
+    ["Can you walk to the hotel?", "走路到得了酒店吗？"],
+    ["Which direction should I take to get to the hospital?", "去医院要往哪个方向走？"],
+    ["Is this direction correct?", "这个方向对吗？"],
+    ["Is this the way to the British Museum?", "这是去大英博物馆的路吗？"],
+    ["Should I take this road or that road?", "我应该走这条路还是那条路？"],
+    ["Does this bus go to Greenwich?", "这辆公交车有到格林威治的吗？"],
+    ["This car goes as far as the train station.", "这辆车最远到火车站。"],
+    ["Which bus should I take to go to Polo Market?", "我想要去波罗集市，应该坐哪一路公交车？"],
+    ["Take bus number 37 or 49.", "坐37路或49路公交车。"],
+    ["Follow me, I'm going exactly in the same direction as where you took the bus.", "跟着我走，我要去的正好和你搭公交车的地方是同一个方向。"],
+    ["Is there a public restroom near here?", "这附近有公共厕所吗？"]
+];
+
+
+var accommodationData = [
+    ["Good afternoon! Can I help you?", "下午好！我能为您效劳吗？"],
+    ["Yes, I have booked a room and would like to register for accommodation now. May I have your name, please?", "是的，我订房间，现在想办理住宿登记。请问尊姓大名？"],
+    ["Oh, do you have two king-sized rooms for two nights?", "哦，有二间大床房住两晚吗？"],
+    ["Yes. Could you please fill out this registration card?", "对。请填写这张登记卡好吗？"],
+    ["No problem.", "没问题。"],
+    ["Do you currently have any available rooms?", "请问目前有空房间吗？"],
+    ["Of course, madam. What kind of room do you want? Single room.", "当然，女士。你想要什么样的客房？单人间。"],
+    ["I haven't made a reservation. Can I book two king-sized rooms?", "我没有预定。我可以订两间大床房间吗？"],
+    ["I need to book a room for tomorrow. Do you still have a king-size room available tonight?", "我要预定明天的房间，今晚还有大床房吗？"],
+    ["I would like to book two double rooms for ladies, sorry for not having them. They are currently fully booked.", "我想预定两间双人房女士，抱歉没有，现在客满了。"],
+    ["How much does it cost to stay for one night?", "住一晚多少钱？"],
+    ["What is the accommodation cost?", "住宿费用是多少？"],
+    ["How much does a double room cost? Does this price include tax and service fee?", "双人间要多少钱？这个价钱含税和服务费吗？"],
+    ["When will you be staying? How long do you plan to stay here?", "您什么时候来住？您打算在这里住多久？"],
+    ["Do you have a cheaper room? Is there a discount for staying for three nights?", "有没有便宜一点的房间？住三晚有没有折扣？"],
+    ["Can I take a look at the room first?", "我可以先看看房间吗？"],
+    ["I want this room.", "我要这间房。"]
+];
+
+
+var accommodationData = [
+    ["I have a reservation for a room.", "我有预约住房。"],
+    ["I need to register for accommodation.", "我要办理住宿登记。"],
+    ["I have a reservation and would like to apply for accommodation registration.", "我有预定，想办理住宿登记。"],
+    ["What is your name?", "您的名字是？"],
+    ["May I ask how to spell your name?", "请问您的姓名怎么拼？"],
+    ["Please fill out this registration form.", "请填写这张登记表。"],
+    ["Do you pay for breakfast?", "有付早餐吗？"],
+    ["What time is breakfast served?", "早餐几点供应？"],
+    ["Where should I have breakfast?", "早餐要在哪里吃？"],
+    ["Can you help me put my valuables in the safe?", "帮我把贵重物品放在保险箱好吗？"],
+    ["When do I need to check out?", "什么时候要退房？"],
+    ["This is your room key.", "这是你的房间钥匙。"],
+    ["What floor is the room on?", "房间在几楼？"],
+    ["Is the room on the third floor?", "房间在三楼吗？"],
+    ["The waiter will come to help you pick up your luggage bag and take you to your room.", "服务员会来帮您提行李袋，并带你去房间的。"],
+    ["Don't bother, I'll just take it myself.", "不用麻烦了，我自己拿就好了。"],
+    ["Excuse me, where is the elevator?", "请问电梯在哪里？"],
+    ["Please give me the key to room 705.", "请给我705号房的钥匙。"]
+];
+
+
+var roomServiceData = [
+    ["This is the Room Service Department.", "这里是客房服务部。"],
+    ["This is room 608.", "这里是608号房。"],
+    ["My room number is 512.", "我的房间号码是512。"],
+    ["I have encountered a problem.", "我遇到一点问题。"],
+    ["I have a question that needs to be solved.", "我有一个问题需要解决。"],
+    ["Can I have two more blankets?", "请问可以再给我两床被子吗？"],
+    ["Can you give me another blanket?", "可以再给我一条毛毯吗？"],
+    ["Do you provide drinking water in your room?", "你们的房间里有没有提供饮用水？"],
+    ["Do you provide hair dryers?", "你们提供吹风机吗？"],
+    ["There is no toilet paper left in the bathroom.", "洗手间里没有卫生纸了。"],
+    ["There is no soap in the bathroom, and there is no shampoo in the bathroom.", "浴室里没有肥皂，浴室里没有洗发水。"],
+    ["There is no toothpaste or toothbrush in my room. Can you help me deliver it over?", "我房间里没有牙膏、牙刷。你可以帮我送过来吗？"],
+    ["There is no hot water in my room. The water is not hot enough.", "我的房间里没热水。水不够热。"],
+    ["The heating in my room is broken.", "我房间里的暖气坏了。"],
+    ["The air conditioning is not working. The room is too cold.", "空调不能用。房间太冷了。"],
+    ["My door won't lock.", "我的门锁不起来。"],
+    ["The light in my room is broken. The light bulb is broken.", "我房间的灯坏掉了。灯泡坏了。"],
+    ["The toilet cannot be filled with water.", "马桶充不了水。"],
+    ["The phone is not working. Could you please take a look? Can you fix it?", "电话不能用。麻烦你们来看一下好吗？你能修好吗？"],
+    ["I will handle this matter immediately.", "我马上处理这件事。"],
+    ["May I ask how to dial the internal line?", "请问怎么拨内线？"],
+    ["May I ask how to unplug the external line?", "请问怎么拔外线？"],
+    ["Is there internet access in the room?", "房间里可以上网吗？"],
+    ["I left the key in the room, can you help me open the door?", "我把钥匙留在房间里了，你能不能帮我开门？"]
+];
+
+
+var checkoutData = [
+    ["I want to check out.", "我要退房。"],
+    ["I checked out this morning.", "我今天早上结账退房。"],
+    ["How do you plan to make the payment?", "你打算如何付款？"],
+    ["What is your payment method?", "你的付款方式是什么？"],
+    ["May I have a look at the bill?", "我可以看一下账单吗？"],
+    ["What is this fee?", "这笔费用是什么？"],
+    ["I want to collect the valuable items I left behind.", "我要领取我寄放的贵重物品。"],
+    ["Can you help me keep my luggage until 3:00 pm?", "你能帮我保管行李到下午3:00吗？"]
+];
+
+
+var diningData = [
+    ["I would like to book a double table.", "我想订一张双人桌。"],
+    ["What time would you like to book, sir?", "想定几点的，先生？"],
+    ["Around 8:30 pm, may I ask your name?", "晚上8:30左右，请问您尊姓大名？"],
+    ["Okay, we will reserve your seat for 10 minutes. Please arrive before 8:40.", "好的，我们会帮您保留座位10分钟，请在8:40前到达。"],
+    ["Sir, are you ready to order now?", "先生，可以点菜了吗？"],
+    ["Sure, please give me a steak.", "可以，请给我来一份牛排。"],
+    ["How do you want the steak done? Is it rare, medium rare, or well done?", "牛排要几分熟的，是三分，五分还是全熟？"],
+    ["What kind of beverage should I drink if I want it fully cooked?", "要全熟要喝什么饮料呢？"],
+    ["Coffee.", "咖啡。"],
+    ["Waiter, please pay the bill.", "服务员，麻烦买单。"],
+    ["Okay, sir. What method of payment would you like to use? Do you accept credit card swiping?", "好的，先生。你想用什么方式付款，你们接受刷信用卡吗？"],
+    ["Sure, sir.", "可以，先生。"]
+];
+
+
+var diningData = [
+    ["Is there a good restaurant near the hotel?", "请问酒店附近有没有不错的餐厅？"],
+    ["Are there any delicious Chinese restaurants near here?", "这附近有没有好吃的中国餐厅？"],
+    ["Is there a cheaper restaurant nearby?", "这附近有没有便宜一点的餐厅呢？"],
+    ["Do I need to make an appointment?", "我需要预约吗？"],
+    ["Can you help me call that restaurant to locate it?", "你可以帮我打电话到那家餐厅定位吗？"],
+    ["Do you accept telephone reservations?", "你们接受电话定位吗？"],
+    ["Hello, I would like to book a table.", "喂，我想订一张桌子。"],
+    ["I would like to book a table for four for tomorrow evening at 7:00.", "我想订一张四人桌，明天晚上7:00的。"],
+    ["I'm sorry, that time slot is already full.", "很抱歉，那个时间段我们已经刻满了。"],
+    ["Do you have dress code requirements?", "你们有着装要求吗？"]
+];
+
+var reservationData = [
+    ["Have you made a reservation?", "你订位了吗？"],
+    ["I have reserved a table for four at 7:00.", "我预定了一张7:00的四人桌。"],
+    ["I don't have a location, I want a table for three.", "我没有定位，我要一张三人桌。"],
+    ["Do you have a table for eight people?", "你们有八人桌吗？"],
+    ["Is this seat occupied?", "这个座位有人吗？"],
+    ["Can we sit at the small table by the window?", "我们可以坐靠窗的那张小桌子吗？"],
+    ["Sorry, madam. The table by the window has already been reserved.", "对不起，女士。靠窗的那张桌子已经有人预定了。"],
+    ["Is there a table for two people in the corner?", "请问靠角落有两个人的桌子吗？"],
+    ["I will take you to the reserved table.", "我带您到预订的桌子边。"],
+    ["Sir, your dining table is ready. Please come this way.", "先生，您的餐桌已经准备好，请这边走。"],
+    ["This is your dining table, is it still okay?", "这是您的餐桌，还可以吗？"],
+    ["Is it okay to do this?", "做这里可以吗？"],
+    ["How about sitting there?", "坐那里好吗？"],
+    ["Would you like to sit near the door?", "您愿意坐在靠近门的地方吗？"],
+    ["This seat is good, let's sit here.", "这个位子不错，我们就坐这里了。"],
+    ["Can we change the table now?", "我们可以换桌了吗？"],
+    ["Can we switch to a non-smoking area?", "我们能换到禁烟区吗？"],
+    ["How long do we need to wait?", "我们需要等多久？"],
+    ["Do we need to wait for a long time?", "我们需要等很久吗？"]
+];
+
+
+var diningQuestions = [
+    ["Could you please show me the menu?", "请给我看下菜单好吗？"],
+    ["Do you have a Chinese menu?", "你们有中文菜单吗？"],
+    ["Can we take a look at the wine list?", "我们可以看一下酒单吗？"],
+    ["Before dinner, I would like to have a drink first.", "饭前，我想先喝点饮料。"],
+    ["Are you ready to order now?", "您可以点菜了吗？"],
+    ["We'll order a meal.", "我们要点餐。"],
+    ["Not yet. We still need to consider it.", "还没好。我们还需要考虑一下。"],
+    ["What do you recommend to eat?", "你推荐吃什么？"],
+    ["Which one do you think is the best?", "你说哪一种最好？"],
+    ["Can you tell me the specialties of each dish?", "你可以告诉我每样菜的特色吗？"],
+    ["Do you prefer Chinese or Western cuisine?", "你喜欢中餐还是西餐？"],
+    ["I recommend lamb chops.", "我推荐羊排。"],
+    ["The fish here are very delicious.", "这里的鱼做得非常可口。"],
+    ["These are the signature dishes of our restaurant.", "这些是我们餐馆的招牌菜。"],
+    ["What are the signature dishes here?", "这里的招牌菜是什么？"],
+    ["I want to eat some dishes with local characteristics.", "我想吃一些有地方特色的菜。"],
+    ["This place is famous for its steak culture.", "这里以牛排文闻名。"],
+    ["What is today's special?", "今天的特餐是什么？"],
+    ["What dishes do you serve for dinner tonight?", "今天晚餐你们供应什么菜色？"],
+    ["We have a variety of Western dishes for you to choose from.", "我们有各式西餐，供您挑选。"],
+    ["Which dish can be served quickly? I only have 30 minutes.", "哪一种菜可以比较快上菜，我只有30分钟。"],
+    ["Is there any food you don't eat?", "有没有您不吃的食物？"],
+    ["Do you have authentic Chinese cuisine?", "你们有地道的中国菜吗？"],
+    ["What Chinese cuisine do you serve?", "你们供应哪些中餐？"],
+    ["Could you please introduce some British dishes to us?", "请帮我们介绍几样英国菜好吗？"],
+    ["Can you help me prepare a lighter dish?", "你可以帮我准备清淡一点的菜吗？"],
+    ["Do you have any vegetarian dishes?", "你们有没有素菜？"],
+    ["What is the difference between this and this?", "这个和这个有什么不同？"]
+];
+
+
+var diningOrderData = [
+    ["May I ask what they ordered?", "请问他们点的是什么？"],
+    ["I want the same, I want this and this.", "我要点一样的，我要这个和这个。"],
+    ["Would you like to order an appetizer?", "你要不要点个开胃菜？"],
+    ["What soup is there today?", "今天有什么汤？"],
+    ["Please give me a bowl of tomato soup.", "请给我来碗番茄汤。"],
+    ["I would like a vegetable salad.", "我要一份蔬菜沙拉。"],
+    ["What would you like to eat?", "您想吃什么？"],
+    ["What sauce would you like to pair with your salad?", "您的沙拉要配什么酱？"],
+    ["We serve ham, steak, grilled beef, and fried chicken today.", "我们今天供应火腿，牛排，烤牛肉和炸鸡。"],
+    ["There are lobsters and crabs today.", "今天有龙虾，蟹。"],
+    ["Do you have lobsters?", "你们有龙虾吗？"],
+    ["Would you like some more side dishes?", "您要再来一点附餐吗？"],
+    ["What is the accompanying meal for steak?", "牛排的附餐是什么？"],
+    ["I want some potato chips.", "我想要一些炸土豆片。"],
+    ["Can I have some white rice?", "我可以要一些白饭吗？"],
+    ["Will this dish be very spicy?", "这道菜会很辣吗？"],
+    ["Would you like a dessert?", "您要来份甜点吗？"],
+    ["What flavor would you like?", "您要什么口味的？"],
+    ["Do you want something to drink?", "你想喝点什么吗？"],
+    ["Do you want tea or coffee?", "你要喝茶还是咖啡？"],
+    ["Can I have two cups of coffee, please?", "请来两杯咖啡好吗？"],
+    ["Do you prefer black coffee or would you like it with cream and sugar?", "您喜欢黑咖啡还是要加奶精和糖？"],
+    ["Please add sugar, no fresh milk or creamer. Just check it out.", "请加糖就好，不要鲜奶或奶精。查就可以了。"],
+    ["Do you want sugar and lemon in your tea?", "您的茶要加糖和柠檬吗？"],
+    ["Can I have a cup of lemon tea?", "可以给我一杯柠檬茶吗？"],
+    ["I'll order this dish. Two copies, please.", "我就点这道菜。请来两份。"],
+    ["I also order the same dish.", "我也点一样的菜。"],
+    ["Do you have anything else to order?", "您还要点什么吗？"],
+    ["Do you want anything else?", "还要点什么吗？"],
+    ["I think these are enough.", "我想这些就够了。"]
+];
+
+
+var diningIssues = [
+    ["My fork fell off, can you give me another one?", "我的叉子掉了，可以再给我一把吗？"],
+    ["The dishes I ordered haven't arrived yet, we've been ordering for half an hour already.", "我点的菜还没来，我们已经点了半个小时了。"],
+    ["I didn't order this meat, but it's still raw.", "我没有点这个这个肉还是生的。"],
+    ["This dish is too salty.", "这道菜太咸了。"],
+    ["This dish is too oily, it's too spicy.", "这道菜太油了，这道菜太辣了。"],
+    ["This dish has no taste.", "这道菜没味道。"],
+    ["Can I cancel my order?", "我可以取消我的点餐吗？"],
+    ["Can you help me add water?", "请帮我加水好吗？"],
+    ["Have you finished eating?", "请问您吃完了吗？"],
+    ["Not yet. Please help me pack the rest.", "还没。请帮我把剩下的打包。"],
+    ["What time do you close?", "你们几点打烊？"],
+    ["Bury the bill. What is this fee?", "埋单。这笔费用是什么？"]
+];
+
+
+var diningData = [
+    ["I want two sets of meals for number 3.", "我要两份3号套餐。"],
+    ["Okay, what would you like to drink? Cola.", "好的，饮料要喝什么？可乐。"],
+    ["Is it a regular cup or a large one? Regular cup.", "普通杯还是大杯的？普通杯。"],
+    ["Okay, what else would you like to order? No more.", "好的还要点些什么吗？没有了。"],
+    ["Dine in or take out?", "堂吃或外带？"],
+    ["Good afternoon, madam. What would you like to order?", "下午好，女士。您要点什么？"],
+    ["I would like a pair of spicy chicken wings, a portion of French fries, and a milkshake.", "我想要一对香辣鸡翅，一份薯条和一份奶昔。"],
+    ["May I ask what flavor you want? I want banana flavor.", "请问你要什么口味的？我要香蕉口味的。"],
+    ["Do you need anything else? No need, thank you. That's good.", "还要什么吗？不用了，谢谢。这样就好。"],
+    ["I want a beef burger.", "我要一个牛肉汉堡。"],
+    ["I want two cheese burgers.", "我要两个芝士汉堡。"],
+    ["I want a large potato.", "我要一份大薯。"],
+    ["I want a cheese burger and a portion of French fries, I want a milkshake, and he wants a cup of milk tea.", "我要一个芝士汉堡和一份薯条，我要一杯奶昔，他要一杯奶茶。"],
+    ["What flavor of milkshake do you want? A glass of cola to go.", "你要什么口味的奶昔？一杯可乐外带。"],
+    ["Is it a large or regular cup? Two sets of table number 4.", "大杯的还是普通杯？两份4号桌。"],
+    ["What kind of sauce do you want? Tomato sauce, I want two pieces of fried chicken.", "你要哪一种酱汁？番茄酱，我要两块炸鸡。"],
+    ["I want chicken breast, not chicken legs, and I don't want pickled cucumbers in my hamburger.", "我要鸡胸肉，不要鸡腿肉，我的汉堡里不要加腌黄瓜。"],
+    ["Don't add onions to my hamburger. Do you need to wait for the French fries for another 2 minutes?", "我的汉堡不要加洋葱。薯条还要等2分钟您要等吗？"],
+    ["Do you need anything else to order? No need, that's all.", "还需要点些什么吗？不用，就要这些。"],
+    ["Can I have it for dine in or takeout? I want to take it out, I want to take a large pack of French fries and a large glass of cola.", "请问堂吃或外带？我要外带，我要外带一包大份薯条和一杯大杯可乐。"],
+    ["Can I have another pack of tomato sauce? I ordered a cheese burger, not a fish burger.", "可以再给我一包番茄酱吗？我点的是芝士汉堡不是鱼堡。"],
+    ["Do you have a straw? I need some napkins. Where are napkins and straws?", "有没有吸管？我需要一些餐巾纸。哪里有餐巾纸和吸管？"],
+    ["May I ask if coffee can be refilled? Can I get a free refill?", "请问咖啡可以续杯吗？可以免费续杯吗？"],
+    ["Is this seat occupied? Can I sit here? Can we share a table with you?", "这个座位有人吗？我可以坐这里吗？可以跟你们共用一张桌子吗？"]
+];
+
+
+var shoppingData = [
+    ["Do you have any apples, please?", "请问你们有苹果吗？"],
+    ["Yes, the apples are over there.", "有，苹果在那边。"],
+    ["Is it sold by individual or by weight?", "是论个卖还是论斤卖？"],
+    ["Sell by the pound.", "论斤卖。"],
+    ["A beautiful stick costs 10 pounds.", "美棒10英镑。"],
+    ["Can you take advantage of these for a while?", "趁一下这些好吗？"],
+    ["4.55 pounds.", "4.55英镑。"],
+    ["Do you need anything else?", "还要其他的吗？"],
+    ["Please give me a bag of oranges.", "请给我一袋橘子。"],
+    ["Here you are.", "给您。"],
+    ["Is there a supermarket near here?", "这附近有没有超市？"],
+    ["What time do you close?", "你们几点打烊？"],
+    ["May I ask which aisle the toothbrush is in?", "请问牙刷在哪一条走道？"],
+    ["Is there a shopping center near here?", "这附近有购物中心吗？"],
+    ["Does that store open on Sundays?", "那家店星期天开门吗？"],
+    ["May I know the operating hours of that store from what time to what time?", "请问那家店的营业时间是几点到几点？"],
+    ["Excuse me, where is the elevator?", "请问电梯在哪里？"],
+    ["I'm just looking.", "我只是看看而已。"],
+    ["Can I just look around and touch it?", "我只是随便看看可以摸吗？"],
+    ["Can I take a look at the handbag placed in the second row on the second shelf?", "我可以看看放在第二个架子上第二排的那个手提包吗？"],
+    ["I won't buy it today for now. I will consider it again, thank you.", "我今天先不买了，我会再考虑一下，谢谢。"]
+];
+
+
+var photoTakingData = [
+    ["Excuse me, can you help us take a photo?", "不好意思，可以帮我们拍张照吗？"],
+    ["No problem, just click here.", "没问题，按这里就可以了。"],
+    ["May I take a photo with you?", "可以跟您合影吗？"],
+    ["Can I take a photo of you?", "我可以拍一张你的照片吗？"],
+    ["Smile. Smile.", "笑一笑。"],
+    ["Can we take a photo together?", "可以一起照张相吗？"],
+    ["May I take a photo with you?", "我可以和你合照吗？"],
+    ["Can I take another photo here?", "再拍一张我可以在这里拍照吗？"],
+    ["Can I take photos here?", "这里可以拍照吗？"],
+    ["Can I use a flash?", "可以用闪光灯吗？"],
+    ["Can I record a video?", "我可以录像吗？"]
+];
+
+
+var travelData = [
+    ["Can you teach me how to install a UK card?", "能教我安装英国卡吗？"],
+    ["Can you teach me how to use a UK card?", "能教我使用英国卡吗？"],
+    ["May I ask which direction the subway station is heading to?", "请问一下地铁站往哪边走？"],
+    ["Do I need to take the 1st subway (Elizabeth Line) to get off at Bond Street when I go to Oxford Street Two Beds Apartment?", "我要去牛津街二二床公寓是坐一号地铁（伊丽莎白线）到邦德街下车吗？"],
+    ["Can you teach me how to buy a subway ticket?", "能教一下我如何买地铁票吗？"]
+];
+
+
+var subwayTicketInstructions = [
+    ["How can I buy a subway ticket in London?", "怎么在伦敦买地铁票？"],
+    ["Buy an Oyster card first", "1、先购买一张生蚝卡"],
+    ["To buy a ticket, don't look at the name first, look for the color, then look for the platform, determine the direction, and then look for the destination.", "2、买票先不看名，先找颜色，然后找站台，确定方向，再找目的地。"]
+];
+
+
+var travelGuideData = [
+    ["According to the destination.", "根据目的地。"],
+    ["One day ticket, travel card extension.", "一日票，旅行卡扩展。"],
+    ["The map of London is divided into six districts.", "伦敦地图分六个区。"],
+    ["For example, selecting the travel card extension can display up to Zone 3.", "例如，选择旅行卡扩展，可显示到3区。"],
+    ["The first step is to input the destination, place name letters, select a one-way ticket, display the fare, confirm in the upper right corner, and then make payment.", "第一步输入目的地，输入地名字母，选择单程票，显示车费，右上角确认，然后付款。"]
+];
 
 
 
- Do you want insurance? I want to add full insurance. That day will add an extra five pounds. Where can I rent a car? I want to rent a car, I want to rent a small car. How long do you want to rent it? Four days. Is there a parking lot nearby? Can I park my car here? We must drive on the right. What is the urban speed limit?
-您要不要保险？我要加全险。那一天要多加五英镑。哪里可以租车，我想要租车，我想要租一台小型车。你要租多久？四天。附近有停车场吗？我可以把车停在这里吗？我们必须靠右行驶。市区限速是多少？
-
-Excuse me, how can I get to the Tate Museum of Modern Art? Oh, just walk along the main road and you'll find it. How long will it take to get there? Just walk for about 5 minutes. Thank you. You're welcome. Good morning, madam. I think I'm lost. I want to go to Hyde Park. Do you know which region it is? Sorry, I didn't know I hadn't been here before. Well, do you know any landmarks near the hotel? Oh, you know my friend said it's near Buckingham Palace, so you need to take a bus to Buckingham Palace. Can you please point me to where the St. Paul's Cathedral is on the map? Sure, I'm sorry, could you please help me? I got lost. Which street is this? Where are we on the map? Excuse me, where is the train station? I am looking for Hilton Hotel. May I ask how to get to the Tate Museum of Modern Art? How can I get there? Sorry, I'm looking for a supermarket. Is there any nearby? I don't know, I'm not familiar with this place either. Cross the road and you will see the University of Cambridge. Just cross the road from here. You can walk back along this road for about 3 minutes and find Oxford University. Walk along this road and you will find that homestay. Keep going straight on the second road on the left. Please walk to the end of this road. Turn left at the first intersection, and the second building on the left will be there. Go there and pass through three streets, then turn right. After passing the first two streets, you can see it. Hmm, let me think about it. Oh, by the way, it's right around the corner.
-不好意思，请问去泰特现代美术馆怎么走？哦，沿着大路往前走，就可以找到。到那里大概要多久？只要走5分钟左右。非常感谢。不用客气。女士，早安。我想我迷路了，我想去海德公园。你知道是哪一个地区吗？对不起，我不知道我没有来过这里。这样啊，那你知道饭店附近有什么地标吗？哦，知道我朋友说是白金汉宫附近，那你需要坐公交车到白金汉宫。可不可以请你给我指一下，圣保罗大教堂在地图上的什么地方呢？可以啊，对不起可不可以请您帮个忙，我迷路了。这是哪一条街？我们在地图上的哪个位置？请问火车站在哪里？我想找希尔顿饭店。请问去泰特现代艺术博物馆怎么走？怎么才可以到那里？对不起，我在找超市，这附近有吗？我也不知道，我对这里也不熟。穿过马路，你就会看到剑桥大学。从这里过马路就是了。你沿这条路往回走，大约3分钟，就可以找到牛津大学。沿这条路往前走，你就可以找到那间民宿。从左边第二条马路一直往前走。请走到这条马路的尽头。在第一个路口左转，左边第2栋大楼就是了。往那里走经过三条街，然后向右转。过了前面两条街就可以看到了，嗯，让我想想看。哦，对了，就在转角的地方。
-
-Can you give me a makeup map? Can you help me mark it? Are there any signs along the way? Are there any obvious landmarks? Can you show me the address? Let me take you there. I happen to be going there. I'll help you guide the way. Can we get there in 10 minutes? How far is this from London? How long will it take me to get there? Can you walk to the hotel? Which direction should I take to get to the hospital? Is this direction correct? Is this the way to the British Museum? Should I take this road or that road? Does this bus go to Greenwich? This car goes as far as the train station. Which bus should I take to go to Polo Market? Take bus number 37 or 49. Follow me, I'm going exactly in the same direction as where you took the bus. Is there a public restroom near here?
-你能化妆地图给我吗？你帮我标明一下好吗？一路上有什么标识吗？有什么明显的地标吗？地址给我看一下好吗？让我带你去吧，我正好要去那里，我帮你带路，我们10分钟内到得了那里吗？这里离伦敦远多远？我到那里要多久？走路到得了酒店吗？去医院要往哪个方向走这个方向对吗？这是去大英博物馆的路吗？我应该走这条路还是那条路？这辆公交车有到格林威治的吗？这辆车最远到火车站。我想要去波罗集市，应该坐哪一路公交车？坐37路或49路公交车。跟着我走，我要去的正好和你搭公交车的地方是同一个方向。这附近有公共厕所吗？
-
-Good afternoon! Can I help you? Yes, I have booked a room and would like to register for accommodation now. May I have your name, please? Oh, do you have two king sized rooms for two nights? Yes. Could you please fill out this registration card? No problem. Do you currently have any available rooms? Of course, madam. What kind of room do you want? Single room. I haven't made a reservation. Can I book two king sized rooms? I need to book a room for tomorrow. Do you still have a king size room available tonight? I would like to book two double rooms for ladies, sorry for not having them. They are currently fully booked. How much does it cost to stay for one night? What is the accommodation cost? How much does a double room cost? Does this price include tax and service fee? When will you be staying? How long do you plan to stay here? Do you have a cheaper room? Is there a discount for staying for three nights? Can I take a look at the room first? I want this room.
-下午好！我能为您效劳吗？是的，我订房间，现在想办理住宿登记。请问尊姓大名？哦，有二间大床房住两晚吗？对。请填写这张登记卡好吗？没问题。请问目前有空房间吗？当然，女士。你想要什么样的客房？单人间。我没有预定。我可以订两间大床房间吗？我要预定明天的房间，今晚还有大床房吗？我想预定两间双人房女士，抱歉没有，现在客满了。住一晚多少钱？住宿费用是多少？双人间要多少钱？这个价钱含税和服务费吗？您什么时候来住？您打算在这里住多久？有没有便宜一点的房间？住三晚有没有折扣？我可以先看看房间吗？我要这间房。
-
-I have a reservation for a room. I need to register for accommodation. I have a reservation and would like to apply for accommodation registration. What is your name? May I ask how to spell your name? Please fill out this registration form. Do you pay for breakfast? What time is breakfast served? Where should I have breakfast? Can you help me put my valuables in the safe? When do I need to check out? This is your room key. What floor is the room on? Is the room on the third floor? The waiter will come to help you pick up your luggage bag and take you to your room. Don't bother, I'll just take it myself. Excuse me, where is the elevator? Please give me the key to room 705.
-我有预约住房。我要办理住宿登记。我有预定，想办理住宿登记。您的名字是？请问您的姓名怎么拼？请填写这张登记表。有付早餐吗？早餐几点供应？早餐要在哪里吃？帮我把贵重物品放在保险箱好吗？什么时候要退房？这是你的房间钥匙。房间在几楼房间在三楼吗？服务员会来帮您提行李袋，并带你去房间的。不用麻烦了，我自己拿就好了。请问电梯在哪里？请给我705号房的钥匙。
-
-This is the Room Service Department. This is room 608. My room number is 512. I have encountered a problem. I have a question that needs to be solved. Can I have two more blankets? Can you give me another blanket? Do you provide drinking water in your room? Do you provide hair dryers? There is no toilet paper left in the bathroom. There is no soap in the bathroom, and there is no shampoo in the bathroom. There is no toothpaste or toothbrush in my room. Can you help me deliver it over? There is no hot water in my room. The water is not hot enough. The heating in my room is broken. The air conditioning is not working. The room is too cold. My door won't lock. The light in my room is broken. The light bulb is broken. The toilet cannot be filled with water. The phone is not working. Could you please take a look? Can you fix it? I will handle this matter immediately. May I ask how to dial the internal line? May I ask how to unplug the external line? Is there internet access in the room? I left the key in the room, can you help me open the door?
-这里是客房服务部。这里是608号房。我的房间号码是512。我遇到一点问题。我有一个问题需要解决，请问可以再给我两床被子吗？可以再给我一条毛毯吗？你们的房间里有没有提供饮用水？你们提供吹风机吗？洗手间里没有卫生纸了。浴室里没有肥皂浴室里没有洗发水。我房间里没有牙膏、牙刷。你可以帮我送过来吗？我的房间里没热水。水不够热。我房间里的暖气坏了。空调不能用。房间太冷了。我的门锁不起来。我房间的灯坏掉了。灯泡坏了。马桶充不了水。电话不能用。麻烦你们来看一下好吗？你能修好吗？我马上处理这件事。请问怎么拨内线？请问怎么拔外线？房间里可以上网吗？我把钥匙留在房间里了，你能不能帮我开门？
-
-I want to check out. I checked out this morning. How do you plan to make the payment? What is your payment method? May I have a look at the bill? What is this fee? I want to collect the valuable items I left behind. Can you help me keep my luggage until 3:00 pm?
-我要退房。我今天早上结账退房。你打算如何付款？你的付款方式是什么？我可以看一下账单吗？这笔费用是什么？我要领取我寄放的贵重物品。你能帮我保管行李到下午3:00吗？
-
-I would like to book a double table. What time would you like to book, sir? Around 8:30 pm, may I ask your name? Okay, we will reserve your seat for 10 minutes. Please arrive before 8:40. Sir, are you ready to order now? Sure, please give me a steak. How do you want the steak done? Is it rare, rare, or well done? What kind of beverage should I drink if I want it fully cooked? Coffee. Waiter, please pay the bill. Okay, sir. What method of payment would you like to use? Do you accept credit card swiping? Sure, sir.
-我想订一张双人桌。想定几点的，先生？晚上8:30左右，请问您尊姓大名？好的，我们会帮您保留座位10分钟，请在8:40前到达。先生，可以点菜了吗？可以，请给我来一份牛排。牛排要几分熟的，是三分，五分还是全熟？要全熟要喝什么饮料呢？咖啡。服务员，麻烦买单。好的，先生。你想用什么方式付款你们接受刷信用卡吗？可以，先生。
-
-Is there a good restaurant near the hotel? Are there any delicious Chinese restaurants near here? Is there a cheaper restaurant nearby? Do I need to make an appointment? Can you help me call that restaurant to locate it? Do you accept telephone location? Hello, I would like to book a table. I would like to book a table for four for tomorrow evening at 7:00. I'm sorry, that time slot is already full. Do you have dress code requirements?
-请问酒店附近有没有不错的餐厅？这附近有没有好吃的中国餐厅？这附近有没有便宜一点的餐厅呢？我需要预约吗？你可以帮我打电话到那家餐厅定位吗？你们接受电话定位？喂，我想订一张桌子。我想订一张四人桌，明天晚上7:00的。很抱歉，那个时间段我们已经刻满了。你们有着装要求吗？
-
-Have you made a reservation? I have reserved a table for four at 7:00. I don't have a location, I want a table for three. Do you have a table for eight people? Is this seat occupied? Can we sit at the small table by the window? Sorry, madam. The table by the window has already been reserved. Is there a table for two people in the corner? I will take you to the reserved table. Sir, your dining table is ready. Please come this way. This is your dining table, is it still okay? Is it okay to do this? How about sitting there? Would you like to sit near the door? This seat is good, let's sit here. Can we change the table now? Can we switch to a non-smoking area? How long do we need to wait? Do we need to wait for a long time?
-你订位了吗？我预定了一张7:00的四人桌。我没有定位，我要一张三人桌。你们有八人桌吗？这个座位有人吗？我们可以坐靠窗的那张小桌子吗？对不起，女士。靠窗的那张桌子已经有人预定了。请问靠角落有两个人的桌子吗？我带您到预订的桌子边。先生，您的餐桌已经准备好，请这边走。这是您的餐桌，还可以吗？做这里可以吗？坐那里好吗？您愿意坐在靠近门的地方吗？这个位子不错，我们就坐这里了。我们可以换桌了吗？我们能换到禁烟区吗？我们需要等多久？我们需要等很久吗？
-
-Could you please show me the menu? Do you have a Chinese menu? Can we take a look at the wine list? Before dinner, I would like to have a drink first. Are you ready to order now? We'll order a meal. Not yet. We still need to consider it. What do you recommend to eat? Which one do you think is the best? Can you tell me the specialties of each dish? Do you prefer Chinese or Western cuisine? I recommend lamb chops. The fish here are very delicious. These are the signature dishes of our restaurant. What are the signature dishes here? I want to eat some dishes with local characteristics. This place is famous for its steak culture. What is today's special? What dishes do you serve for dinner tonight? We have a variety of Western dishes for you to choose from. Which dish can be served quickly? I only have 30 minutes. Is there any food you don't eat? Do you have authentic Chinese cuisine? What Chinese cuisine do you serve? Could you please introduce some British dishes to us? Can you help me prepare a lighter dish? Do you have any vegetarian dishes? What is the difference between this and this?
-请给我看下菜单好吗？你们有中文菜单吗？我们可以看一下酒单吗？饭前，我想先喝点饮料。您可以点菜了吗？我们要点餐。还没好。我们还需要考虑一下。你推荐吃什么？你说哪一种最好？你可以告诉我每样菜的特色吗？你喜欢中餐还是西餐？我推荐羊排。这里的鱼做得非常可口。这些是我们餐馆的招牌菜这里的招牌菜是什么？我想吃一些有地方特色的菜。这里以牛排文闻名。今天的特餐是什么？今天晚餐你们供应什么菜色我们有各式西餐，供您挑选。哪一种菜可以比较快上菜，我只有30分钟。有没有您不吃的食物？你们有地道的中国菜吗？你们供应哪些中餐？请帮我们介绍几样英国菜好吗？你可以帮我准备清淡一点的菜吗？你们有没有素菜？这个和这个有什么不同？
-
-May I ask what they ordered? I want the same, I want this and this. Would you like to order an appetizer? What soup is there today? Please give me a bowl of tomato soup. I would like a vegetable salad. What would you like to eat? What sauce would you like to pair with your salad? We serve ham, steak, grilled beef, and fried chicken today. There are lobsters and crabs today. Do you have lobsters? Would you like some more side dishes? What is the accompanying meal for steak? I want some potato chips. Can I have some white rice? Will this dish be very spicy? Would you like a dessert? What flavor would you like? Do you want something to drink? Do you want tea or coffee? Can I have two cups of coffee, please? Do you prefer black coffee or would you like it with cream and sugar? Please add sugar, no fresh milk or creamer. Just check it out. Do you want sugar and lemon in your tea? Can I have a cup of lemon tea? I'll order this dish. Two copies, please. I also order the same dish. Do you have anything else to order? Do you want anything else? I think these are enough.
-请问他们点的是什么？我要点一样的，我要这个和这个。你要不要点个开胃菜？今天有什么汤？请给我来碗番茄汤我要一份蔬菜沙拉。您想吃什么？您的沙拉要配什么酱？我们今天供应火腿，牛排，烤牛肉和炸鸡。今天有龙虾，蟹。你们有龙虾吗？您要再来一点附餐吗？牛排的附餐是什么？我想要一些炸土豆片。我可以要一些白饭吗？这道菜会很辣吗？您要来份甜点吗？您要什么口味的？你想喝点什么吗？你要喝茶还是咖啡？请来两杯咖啡好吗？您喜欢黑咖啡还是要加奶精和糖？请加糖就好，不要鲜奶或奶精。查就可以了，您的茶要加糖和柠檬吗？可以给我一杯柠檬茶吗？我就点这道菜。请来两份。我也点一样的菜。您还要点什么吗？还要点什么吗？我想这些就够了。
-
-My fork fell off, can you give me another one? The dishes I ordered haven't arrived yet, we've been ordering for half an hour already. I didn't order this meat, but it's still raw. This dish is too salty. This dish is too oily, it's too spicy. This dish has no taste. Can I cancel my order? Can you help me add water? Have you finished eating? Not yet. Please help me pack the rest. What time do you close? Bury the bill. What is this fee?
-我的叉子掉了，可以再给我一把吗？我点的菜还没来，我们已经点了半个小时了。我没有点这个这个肉还是生的。这道菜太咸了。这道菜太油了，这道菜太辣了。这道菜没味道。我可以取消我的点餐吗？请帮我加水好吗？请问您吃完了吗？还没。请帮我把剩下的打包。你们几点打烊？埋单。这笔费用是什么？
-
-I want two sets of meals for number 3. Okay, what would you like to drink? Cola. Is it a regular cup or a large one? Regular cup. Okay, what else would you like to order? No more. Dine in or take out? Good afternoon, madam. What would you like to order? I would like a pair of spicy chicken wings, a portion of French fries, and a milkshake. May I ask what flavor you want? I don't know, what are the flavors you have? There are flavors of strawberries, chocolate, vanilla, and bananas. Okay, I want banana flavor. Do you need anything else? No need, thank you. That's good. I want a beef burger. I want two cheese burgers. I want a large potato. I want a cheese burger and a portion of French fries, I want a milkshake, and he wants a cup of milk tea. What flavor of milkshake do you want? A glass of cola to go. Is it a large or regular cup? Two sets of table number 4. What kind of sauce do you want? Tomato sauce, I want two pieces of fried chicken. I want chicken breast, not chicken legs, and I don't want pickled cucumbers in my hamburger. Don't add onions to my hamburger. Do you need to wait for the French fries for another 2 minutes? Do you need anything else to order? No need, that's all. Can I have it for dine in or takeout? I want to take it out, I want to take a large pack of French fries and a large glass of cola. Can I have another pack of tomato sauce? I ordered a cheese burger, not a fish burger. Do you have a straw? I need some napkins. Where are napkins and straws? May I ask if coffee can be refilled? Can I get a free refill? Is this seat occupied? Can I sit here? Can we share a table with you?
-我要两份3号套餐。好的，饮料要喝什么？可乐。普通杯还是大杯的？普通杯。好的还要点些什么吗？没有了。堂吃或外带？下午好，女士。您要点什么？我想要一对香辣鸡翅，一份薯条和一份奶昔。请问你要什么口味的？我也不知道，你们有哪几种口味？有草莓、巧克力、香草和香蕉口味。好，我要香蕉口味的。还要什么吗？不用了，谢谢。这样就好。我要一个牛肉汉堡。我要两个芝士汉堡。我要一份大薯。我要一个芝士汉堡和一份薯条，我要一杯奶昔，他要一杯奶茶。你要什么口味的奶昔？一杯可乐外带。大杯的还是普通杯？两份4号桌。你要哪一种酱汁？番茄酱，我要两块炸鸡。我要鸡胸肉，不要鸡腿肉，我的汉堡里不要加腌黄瓜。我的汉堡不要加洋葱。薯条还要等2分钟您要等吗？还需要点些什么吗？不用，就要这些，请问堂吃或外带？我要外带，我要外带一包大份薯条和一杯大杯可乐。可以再给我一包番茄酱吗？我点的是芝士汉堡不是鱼堡。有没有吸管？我需要一些餐巾纸。哪里有餐巾纸和吸管？请问咖啡可以续杯吗？可以免费续杯吗？这个座位有人吗？我可以坐这里吗？可以跟你们共用一张桌子吗？
-
-Do you have any apples, please? Yes, the apples are over there. Is it sold by individual or by weight? Sell by the pound. A beautiful stick costs 10 pounds. Can you take advantage of these for a while? 4.55 pounds. Do you need anything else? Please give me a bag of oranges. Here you are.
-Is there a supermarket near here? What time do you close? May I ask which aisle the toothbrush is in?
-Is there a shopping center near here? Does that store open on Sundays? May I know the operating hours of that store from what time to what time? Excuse me, where is the elevator? I'm just looking. Can I just look around and touch it? Can I take a look at the handbag placed in the second row on the second shelf? I won't buy it today for now. I will consider it again, thank you.
-请问你们有苹果吗？有，苹果在那边。是论个卖还是论斤卖？论斤卖。美棒10英镑。趁一下这些好吗？4.55英镑。还要其他的吗？请给我一袋橘子。给您。
-这附近有没有超市？你们几点打烊？请问牙刷在哪一条走道？
-这附近有购物中心吗？那家店星期天开门吗？请问那家店的营业时间是几点到到几点？请问电梯在哪里？我只是看看而已。我只是随便看看可以摸吗？我可以看看放在第二个架子上第二排的那个手提包吗？我今天先不买了，我会再考虑一下，谢谢。
-
-Excuse me, can you help us take a photo? No problem, just click here. May I take a photo with you? Can I take a photo of you? Smile. Smile. Can we take a photo together? May I take a photo with you? Can I take another photo here? Can I take photos here? Can I use a flash? Can I record a video?
-不好意思，可以帮我们拍张照吗？没问题，按这里就可以了。可以跟您合影吗？我可以拍一张你的照片吗？笑一笑。笑一个。可以一起照张相吗？我可以和你合照吗？再拍一张我可以在这里拍照吗？这里可以拍照吗？可以用闪光灯吗？我可以录像吗？
-
-Can you teach me how to install a UK card? Can you teach me how to use a UK card? May I ask which direction the subway station is heading to? Do I need to take the 1st subway (Elizabeth Line) to get off at Bond Street when I go to Oxford Street Two Beds Apartment? Can you teach me how to buy a subway ticket?
-能教我安装英国卡吗？能教我使用英国卡吗？请问一下地铁站往哪边走？我要去牛津街二二床公寓是坐一号地铁（伊丽莎白线）到邦德街下车吗？能教一下我如何买地铁票吗？
-
-How can I buy a subway ticket in London?
-1. Buy an oyster card first
-2. To buy a ticket, don't look at the name first, look for the color, then look for the platform, determine the direction, and then look for the destination.
-怎么在伦敦买地铁票？
-1、先购买一张生蚝卡
-2、买票先不看名，先找颜色，然后找站台，确定方向，再找目的地。
-
-According to the destination. One day ticket, travel card extension. The map of London is divided into six districts. For example, selecting the travel card extension can display up to Zone 3. The first step is to input the destination, place name letters, select a one-way ticket, display the fare, confirm in the upper right corner, and then make payment
-根据目的地。一日票，旅行卡扩展。伦敦地图分六个区。例如，选择旅行卡扩展，可显示到3区。第一部输入目的地，输入地名字母，选择单程票，显示车费，右上角确认，然后付款
-
-Cotswold, Hyde Park, Buckingham Palace, Big Ben, the London Eye, the British Museum, the Natural History Museum, Maribonne Street, Oxford Street Chinatown, Baltic Market Linnig, Cambridge, Oxford, Kingston, Southampton, Isle of Wight, Bath, Birmingham, Coventry, Stoke, Nottingham, Derby, Lincoln, Manchester, Liverpool, Carlisle, York, Leeds, Bradford, Newcastle, Sunderland
-科茨沃尔德，海德公园，白金汉宫，大本钟，伦敦眼，大英博物馆， 自然史博物馆，马里波恩街区，牛津街中国城，波罗市集）林尼治，剑桥，牛津，金斯顿，南安普敦，怀特岛，巴斯，伯明翰，考文垂，斯托克，诺丁汉，徳比，林肯，曼彻斯特，利物浦，卡莱尔，约克，利兹，布拉德福德，纽卡斯尔，森德兰
