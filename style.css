@@ -40,3 +40,19 @@ tr:last-child td {
   border-bottom: 2px solid #ddd;
 }
 
+#backToTop {  
+  display: none; /* 默认隐藏 */  
+  position: fixed; /* 固定位置 */  
+  bottom: 20px; /* 距离底部20像素 */  
+  right: 30px; /* 距离右侧30像素 */  
+  z-index: 99; /* 确保显示在其他元素上方 */  
+  border: none; /* 无边框 */  
+  outline: none; /* 无轮廓 */  
+  background-color: black; /* 背景颜色 */  
+  color: white; /* 文字颜色 */  
+  cursor: pointer; /* 鼠标悬停样式 */  
+  padding: 15px; /* 内边距 */  
+  border-radius: 10px; /* 圆角 */  
+  font-family: 'Microsoft YaHei', 'Times New Roman', serif; /* 中文字体为楷体，英文新罗马字体，备选为Serif */  
+  font-weight: bold; /* 字粗一点 */  
+}

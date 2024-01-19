@@ -4,6 +4,7 @@ var Wayto = [
 ["One berth ticket to Canterbury town. I want a berth ticket to Dover's White Cliffs. Can I have a lower berth ticket? Is the journey far? What is the fare? How much does the train ticket to the Seven Sisters cost? How much is the roundtrip? The one-way fare is 30 pounds, and the roundtrip is 55 pounds. Do I have to change trains? You don't have to transfer, it's usually a direct express train.", "一张到坎特伯雷小镇的卧铺票。我要一张到多弗白崖的卧铺票。能给我一张下铺票吗？路程远不远？票价多少？去七姐妹的火车票多少钱一张？往返票多少钱？单程票价30英镑，往返票价55英镑。我要换车吗？你不必转车，这一般是直达快车。"]
 ];
 
+
 var Platform = [
 ["Where can I catch the train to Oxford? ", "去牛津在哪个站台搭车？"],
 ["Which platform does this train depart from? Please go to platform 7. Where is Platform 4? ", "这趟火车由第几站台开出？请去7号站台。4号站台在哪里？"],
@@ -12,6 +13,18 @@ var Platform = [
 ["I got on the wrong train. I want to get a refund. ", "我搭错车了，我想要退票。"]
 ];
 
+
+
+
+
+var what = [
+    ["Excuse me, which carriage is seat 35W? Where is the restroom? ","请问座位35W是哪一节车厢？请问洗手间在哪里？"],
+    ["Could you please show me your ticket? Do I need a replacement ticket? ","请出示车票好吗？我需要补票吗？"],
+    ["How many stops are there to Westminster Abbey, please? ","请问到西敏寺还有几站？"],
+    ["Is there a dining car on this bus? The dining car is in the seventh carriage. ","这班车上有餐车吗？餐车在第七车厢。"],
+    ["Do I need to book a seat in the dining car? I would like to book a seat for four people tonight at 6:30. ","我需要预定餐车的座位吗？我想预定今晚6:30，四个人的位子。"],
+    ["May I ask which exit is available in the evening hall?","请问晚堂能接的出口是哪一个？"]
+    ];
 
 var what = [
     ["",""],
@@ -22,11 +35,19 @@ var what = [
     ["",""]
     ];
 
-Excuse me, which carriage is seat 35W? Where is the restroom? Could you please show me your ticket? Do I need a replacement ticket? How many stops are there to Westminster Abbey, please? Is there a dining car on this bus? The dining car is in the seventh carriage. Do I need to book a seat in the dining car? I would like to book a seat for four people tonight at 6:30. May I ask which exit is available in the evening hall?
-请问座位35W是哪一节车厢请问洗手间在哪里？请出示车票好吗？我需要补票吗？请问到西敏寺还有几站？这班车上有餐车吗？餐车在第七车厢。我需要预定餐车的座位吗？我想预定今晚6:30，四个人的位子。请问晚堂能接的出口是哪一个？
+var what = [
+    ["I want to rent a car. What kind of car do you have? ","我想要租车。你们有什么车？"],
+    ["We have Honda, Citroen, and Toyota cars. Which one do you want? ","我们有本田、雪铁龙和丰田的车，您想要哪一种？"],
+    ["I want to rent a Citroen C2, and the rent is 300 pounds per day.","那我要租雪铁龙的C 2,租金一天多少一天300英镑。"],
+    ["",""],
+    ["",""],
+    ["",""]
+    ];
 
-I want to rent a car. Could you please show me your driver's license? This is my international driver's license. What kind of car do you have? We have Honda, Citroen, and Toyota cars. Which one do you want? I want to rent a Citroen C2, and the rent is 300 pounds per day. Do you want insurance? I want to add full insurance. That day will add an extra five pounds. Where can I rent a car? I want to rent a car, I want to rent a small car. How long do you want to rent it? Four days. Is there a parking lot nearby? Can I park my car here? We must drive on the right. What is the urban speed limit?
-我想要租车。请出示您的驾驶证好吗？这是我的国际驾照，你们有什么车？我们有本田、雪铁龙和丰田的车，您想要哪一种？那我要租雪铁龙的C 2,租金一天多少一天300英镑。您要不要保险？我要加全险。那一天要多加五英镑。哪里可以租车，我想要租车，我想要租一台小型车。你要租多久？四天。附近有停车场吗？我可以把车停在这里吗？我们必须靠右行驶。市区限速是多少？
+
+
+ Do you want insurance? I want to add full insurance. That day will add an extra five pounds. Where can I rent a car? I want to rent a car, I want to rent a small car. How long do you want to rent it? Four days. Is there a parking lot nearby? Can I park my car here? We must drive on the right. What is the urban speed limit?
+您要不要保险？我要加全险。那一天要多加五英镑。哪里可以租车，我想要租车，我想要租一台小型车。你要租多久？四天。附近有停车场吗？我可以把车停在这里吗？我们必须靠右行驶。市区限速是多少？
 
 Excuse me, how can I get to the Tate Museum of Modern Art? Oh, just walk along the main road and you'll find it. How long will it take to get there? Just walk for about 5 minutes. Thank you. You're welcome. Good morning, madam. I think I'm lost. I want to go to Hyde Park. Do you know which region it is? Sorry, I didn't know I hadn't been here before. Well, do you know any landmarks near the hotel? Oh, you know my friend said it's near Buckingham Palace, so you need to take a bus to Buckingham Palace. Can you please point me to where the St. Paul's Cathedral is on the map? Sure, I'm sorry, could you please help me? I got lost. Which street is this? Where are we on the map? Excuse me, where is the train station? I am looking for Hilton Hotel. May I ask how to get to the Tate Museum of Modern Art? How can I get there? Sorry, I'm looking for a supermarket. Is there any nearby? I don't know, I'm not familiar with this place either. Cross the road and you will see the University of Cambridge. Just cross the road from here. You can walk back along this road for about 3 minutes and find Oxford University. Walk along this road and you will find that homestay. Keep going straight on the second road on the left. Please walk to the end of this road. Turn left at the first intersection, and the second building on the left will be there. Go there and pass through three streets, then turn right. After passing the first two streets, you can see it. Hmm, let me think about it. Oh, by the way, it's right around the corner.
 不好意思，请问去泰特现代美术馆怎么走？哦，沿着大路往前走，就可以找到。到那里大概要多久？只要走5分钟左右。非常感谢。不用客气。女士，早安。我想我迷路了，我想去海德公园。你知道是哪一个地区吗？对不起，我不知道我没有来过这里。这样啊，那你知道饭店附近有什么地标吗？哦，知道我朋友说是白金汉宫附近，那你需要坐公交车到白金汉宫。可不可以请你给我指一下，圣保罗大教堂在地图上的什么地方呢？可以啊，对不起可不可以请您帮个忙，我迷路了。这是哪一条街？我们在地图上的哪个位置？请问火车站在哪里？我想找希尔顿饭店。请问去泰特现代艺术博物馆怎么走？怎么才可以到那里？对不起，我在找超市，这附近有吗？我也不知道，我对这里也不熟。穿过马路，你就会看到剑桥大学。从这里过马路就是了。你沿这条路往回走，大约3分钟，就可以找到牛津大学。沿这条路往前走，你就可以找到那间民宿。从左边第二条马路一直往前走。请走到这条马路的尽头。在第一个路口左转，左边第2栋大楼就是了。往那里走经过三条街，然后向右转。过了前面两条街就可以看到了，嗯，让我想想看。哦，对了，就在转角的地方。
