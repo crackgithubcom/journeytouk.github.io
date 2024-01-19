@@ -19,7 +19,6 @@ readableElements.forEach(element => {
         readTextWithAssistiveReading(element.innerText);  
     });  
 });
-
 */
 
 
