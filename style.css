@@ -1,8 +1,11 @@
-.centered{
+.centered {
   text-align: center;
   font-size: 45px;
   overflow-wrap: break-word;
+  font-weight: bold;
+  font-family: 'Microsoft YaHei', sans-serif;
 }
+
 .large{
   font-size: 50px;
 }
