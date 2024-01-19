@@ -1,8 +1,8 @@
 // script.js
 
-
-function generateTable(title, data) {
-    document.write("<h2>" + title + "：</h2>");
+//"+" id=\"section"+section.tostring()+"\"
+function generateTable(title, data, n) {  
+    document.write("<h2 id=\"section" + n.toString() + "\">" + title + "</h2>");
     document.write("<table border='1' class='row'>");
     document.write("<tr><th>英文</th><th>解释</th></tr>");
 
@@ -260,12 +260,17 @@ var TrainSchedule = [
 
 
 
+
+
+
+
 // Call the function with different data for each section
-generateTable("在机场", airportData);
-generateTable("购物", shoppingData);
-generateTable("登机篇",checkInData);
-generateTable("机场过关",airportAnnouncements);
-generateTable("机场词汇",airportTerms);
+generateTable("在机场", airportData, 1);
+generateTable("购物", shoppingData, 2);
+generateTable("登机篇",checkInData, 3);
+generateTable("机场过关",airportAnnouncements,4);
+generateTable("机场词汇",airportTerms,5);
+/*
 generateTable("机场第二篇",Airport);
 generateTable("去牛津街海德公园住处", OxfordapartmentData);
 generateTable("去酒店路上",Waytohotel);
@@ -276,6 +281,8 @@ generateTable("餐馆对话",Restaurant);
 generateTable("问路", askdirData);
 generateTable("火车行程表",TrainSchedule);
 generateTable("火车站询问",TrainStation);
+
+*/
 
 
 
